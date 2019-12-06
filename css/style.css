@@ -371,7 +371,7 @@ template {
   flex-direction: column;
   justify-content: center;
   padding-top: 100px;
-  background: #131313 url("/img/hero-bg.jpg") no-repeat center/cover;
+  background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #ffffff; }
   .hero__content {
@@ -416,7 +416,8 @@ template {
   margin: 0;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
-  font-size: 48px; }
+  font-size: 48px;
+  font-weight: 400; }
   .title--primary {
     color: #E3B873; }
 
