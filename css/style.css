@@ -380,7 +380,7 @@ template {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
+  background: #131313 url("/img/hero-bg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #ffffff; }
   .hero::before {
