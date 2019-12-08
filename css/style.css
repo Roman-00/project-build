@@ -323,6 +323,7 @@ template {
   border-radius: 2px;
   text-transform: uppercase; }
   .button:hover {
+    background-color: #c39f65;
     cursor: pointer; }
   .button--primary {
     background-color: #E3B873;
@@ -402,7 +403,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 100px;
   background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #ffffff; }
