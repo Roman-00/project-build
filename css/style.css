@@ -512,14 +512,13 @@ body {
   .hero__instagram {
     display: none; }
   .hero__content {
-    margin-left: 0; } }
-
-@media screen and (max-width: 570px) {
+    margin-left: 0; }
   .contacts__phone {
-    margin-right: 0;
     color: #ffffff;
-    text-decoration: none; }
-  .contacts__button {
+    text-decoration: none; } }
+
+@media screen and (max-width: 576px) {
+  .contacts__phone {
     display: none; }
   .title {
     font-size: 1.64rem; }
@@ -534,6 +533,12 @@ body {
     display: block;
     min-width: 22.86rem;
     margin-bottom: 1.85rem; } }
+
+@media screen and (max-width: 360px) {
+  .contacts__button {
+    display: none; }
+  .hero__scroll-down {
+    display: none; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {

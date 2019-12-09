@@ -12,14 +12,15 @@
       display: none
     &__content
       margin-left: 0
-@media screen and ( max-width:570px  )
   .contacts
     &__phone
-      margin-right: 0
       color: $lite
       text-decoration: none
-    &__button
-      display: none
+
+@media screen and ( max-width:576px  )
+  .contacts
+    &__phone
+     display: none
   .title
     font-size: 1.64rem
   .hero
@@ -34,6 +35,14 @@
       display: block
       min-width: 22.86rem
       margin-bottom: 1.85rem
+  
+@media screen and ( max-width:360px  )
+  .contacts
+    &__button
+      display: none
+  .hero
+    &__scroll-down
+      display: none
 @media screen and ( max-height:520px  )
   .hero
     &__scroll-down
