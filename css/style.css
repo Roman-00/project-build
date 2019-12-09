@@ -535,6 +535,8 @@ body {
     margin-bottom: 1.85rem; } }
 
 @media screen and (max-width: 360px) {
+  .contacts__phone {
+    display: none; }
   .contacts__button {
     display: none; }
   .hero__scroll-down {
