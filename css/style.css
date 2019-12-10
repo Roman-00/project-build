@@ -428,8 +428,8 @@ body {
     background-color: rgba(19, 19, 19, 0.7); }
   .hero__content {
     position: relative;
-    max-width: 47.85rem;
-    margin-left: 4.28rem; }
+    max-width: 670px;
+    margin-left: 60px; }
   .hero__title {
     margin-bottom: 0.90rem; }
   .hero__text {
@@ -472,11 +472,11 @@ body {
 .instagram {
   display: flex;
   justify-content: center;
-  align-items: center;
   background-color: #131313; }
   .instagram__link {
     display: flex;
     align-items: center;
+    margin-bottom: 80px;
     font-size: 1.1rem;
     text-transform: uppercase;
     text-decoration: none;
@@ -500,48 +500,48 @@ body {
   .title--primary {
     color: #E3B873; }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
   html {
     font-size: 12px; }
+  .nav {
+    margin-left: 2rem; }
+    .nav__item {
+      margin-right: 2.63rem; }
+  .title {
+    max-width: 400px; } }
+
+@media screen and (max-width: 1200px) {
   .nav__item {
-    margin-right: 1rem; } }
+    margin-right: 1rem;
+    margin-left: 1rem; } }
+
+@media screen and (max-width: 1070px) {
+  .nav {
+    display: none; } }
 
 @media screen and (max-width: 992px) {
-  .nav {
-    display: none; }
   .hero__instagram {
     display: none; }
   .hero__content {
-    margin-left: 0; }
-  .contacts__phone {
-    color: #ffffff;
-    text-decoration: none; } }
+    margin-left: 0; } }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 570px) {
   .contacts__phone {
+    margin-right: 0;
+    color: #ffffff;
+    text-decoration: none; }
+  .contacts__button {
     display: none; }
   .title {
-    font-size: 1.64rem; }
+    font-size: 23px; }
   .hero__scroll-down {
     display: none; }
   .hero__content {
-    max-width: 22.86rem; }
+    max-width: 339px; }
   .hero__text {
-    margin-bottom: 2.28rem;
-    font-size: 1.29rem; }
+    max-width: 300px;
+    font-size: 17px; }
   .hero__button {
     display: block;
     min-width: 22.86rem;
     margin-bottom: 1.85rem; } }
-
-@media screen and (max-width: 360px) {
-  .contacts__phone {
-    display: none; }
-  .contacts__button {
-    display: none; }
-  .hero__scroll-down {
-    display: none; } }
-
-@media screen and (max-height: 520px) {
-  .hero__scroll-down {
-    display: none; } }

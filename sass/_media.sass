@@ -1,55 +1,48 @@
-@media screen and ( max-width:1200px )
+@media screen and ( max-width:1250px  )
   html
     font-size: 12px
   .nav
+    margin-left: 2rem
+    &__item
+      margin-right: 2.63rem
+  .title
+    max-width: 400px
+@media screen and ( max-width:1200px  )
+  .nav
     &__item
       margin-right: 1rem
-@media screen and ( max-width:992px )
+      margin-left: 1rem
+@media screen and ( max-width:1070px  )
   .nav
     display: none
+@media screen and ( max-width:992px  )
   .hero
     &__instagram
       display: none
     &__content
       margin-left: 0
+@media screen and ( max-width:570px  )
   .contacts
     &__phone
+      margin-right: 0
       color: $lite
       text-decoration: none
-
-@media screen and ( max-width:576px  )
-  .contacts
-    &__phone
-     display: none
+    &__button
+      display: none
   .title
-    font-size: 1.64rem
+    font-size: 23px  
   .hero
     &__scroll-down
       display: none
     &__content
-      max-width: 22.86rem
+      max-width: 339px
     &__text
-      margin-bottom: 2.28rem
-      font-size: 1.29rem
+      max-width: 300px
+      font-size: 17px
     &__button
       display: block
       min-width: 22.86rem
       margin-bottom: 1.85rem
-  
-@media screen and ( max-width:360px  )
-  .contacts
-    &__phone
-      display: none
-    &__button
-      display: none
-  .hero
-    &__scroll-down
-      display: none
-@media screen and ( max-height:520px  )
-  .hero
-    &__scroll-down
-      display: none
-  
   
   
   
