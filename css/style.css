@@ -393,7 +393,6 @@ body {
   text-transform: uppercase; }
 
 .nav__item {
-  /*margin-right: 2.4rem* */
   margin-right: 2.63rem;
   color: #ffffff;
   font-family: 'Futura Book';
@@ -500,30 +499,32 @@ body {
   .title--primary {
     color: #E3B873; }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-height: 520px) {
+  .hero__scroll-down {
+    display: none; } }
+
+@media screen and (max-width: 1270px) {
   html {
     font-size: 12px; }
   .nav__item {
-    margin-right: 1rem;
-    margin-left: 1rem; }
-  .hero__text {
-    max-width: 480px; }
+    margin-left: 1rem;
+    margin-right: 1rem; }
   .title {
-    max-width: 400px; } }
+    max-width: 500px; } }
 
 @media screen and (max-width: 1070px) {
   .nav {
+    display: none; }
+  .hero__instagram {
     display: none; } }
 
 @media screen and (max-width: 992px) {
-  .hero__instagram {
-    display: none; }
   .hero__content {
-    margin-left: 0; } }
+    margin: 0; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
-    margin-right: 0;
+    margin-right: 0px;
     color: #ffffff;
     text-decoration: none; }
   .contacts__button {
@@ -533,16 +534,11 @@ body {
   .hero__scroll-down {
     display: none; }
   .hero__content {
-    max-width: 339px; }
+    max-width: 321px; }
   .hero__text {
-    max-width: 300px;
-    font-size: 17px; }
+    font-size: 1.29rem;
+    margin-bottom: 2.28rem; }
   .hero__button {
     display: block;
     width: 100%;
-    /*min-width: 22.86rem*/
     margin-bottom: 1.85rem; } }
-
-@media screen and (max-height: 520px) {
-  .hero__scroll-down {
-    display: none; } }
