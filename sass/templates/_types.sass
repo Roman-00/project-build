@@ -3,12 +3,10 @@
     margin-bottom: 2rem
 .row
   display: flex
-  flex-wrap: wrap
   align-items: flex-start
   justify-content: space-between
 .col
   flex-basis: 32%
-  min-width: 392px
 .card
   margin-bottom: 5rem
   &__text
@@ -43,13 +41,6 @@
     text-transform: uppercase
     background-color: $primary
     color: $lite
-@media screen and ( max-width:939px )
-  .row
-    flex-direction: column
-    align-items: center
-  .card
-    &__text
-      margin-left: 0
 @media screen and ( max-width:760px )
   .row
     flex-direction: column
