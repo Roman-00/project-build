@@ -1,4 +1,6 @@
 .modal
+  opacity: 0
+  visibility: hidden
   position: fixed
   left: 0
   top: 0
@@ -11,6 +13,9 @@
   height: 100%
   background-color: rgba($dark, 0.6)
   z-index: 199
+  &--visible
+    opacity: 1
+    visibility: visible
   &__dialog
     position: relative
     max-width: 509px
@@ -23,7 +28,7 @@
     top: 0
     width: 28px
     height: 28px
-    margin: 12px
+    margin: 12px 14px 14px 14px
     background: transparent url('/img/close.svg') no-repeat center
     border: none
     cursor: pointer
@@ -34,6 +39,7 @@
     font-weight: 400
     font-size: 19px
     text-align: center
+    line-height: 27px;
   &__form
     display: flex
     flex-direction: column

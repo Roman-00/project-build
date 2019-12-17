@@ -609,6 +609,8 @@ img {
   left: 0; }
 
 .modal {
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   left: 0;
   top: 0;
@@ -621,6 +623,9 @@ img {
   height: 100%;
   background-color: rgba(19, 19, 19, 0.6);
   z-index: 199; }
+  .modal--visible {
+    opacity: 1;
+    visibility: visible; }
   .modal__dialog {
     position: relative;
     max-width: 509px;
@@ -633,7 +638,7 @@ img {
     top: 0;
     width: 28px;
     height: 28px;
-    margin: 12px;
+    margin: 12px 14px 14px 14px;
     background: transparent url("/img/close.svg") no-repeat center;
     border: none;
     cursor: pointer; }
@@ -643,7 +648,8 @@ img {
     font-family: 'Yeseva One', cursive;
     font-weight: 400;
     font-size: 19px;
-    text-align: center; }
+    text-align: center;
+    line-height: 27px; }
   .modal__form {
     display: flex;
     flex-direction: column; }
