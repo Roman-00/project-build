@@ -333,7 +333,8 @@ template {
     background-color: #E3B873;
     color: #ffffff;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-    transition: box-shadow 0.3s; }
+    transition: box-shadow 0.3s;
+    font-weight: 500; }
     .button--primary:hover {
       box-shadow: none; }
   .button--outline {
@@ -344,6 +345,40 @@ template {
     padding: 18px 25px; }
   .button--size {
     padding: 18px 42px; }
+
+.label {
+  font-size: 15px; }
+  .label--lite {
+    color: rgba(255, 255, 255, 0.5); }
+
+.input {
+  padding: 0.5rem 0;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  font-size: 18px;
+  color: #ffffff; }
+  .input::placeholder {
+    color: #ffffff; }
+
+.policy__checkbox {
+  opacity: 0;
+  visibility: hidden; }
+  .policy__checkbox:checked + .policy__label::before {
+    content: '';
+    background: #E3B873 url("../img/check.svg") no-repeat center/0.8rem; }
+
+.policy__label {
+  display: flex;
+  align-items: center; }
+  .policy__label::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    border: 1px solid #E3B873;
+    border-radius: 1px;
+    cursor: pointer; }
 
 .container {
   width: 85%;
@@ -572,6 +607,61 @@ img {
 .design__card--pricetag {
   padding: 1.214rem 4.1rem;
   left: 0; }
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.6);
+  z-index: 199; }
+  .modal__dialog {
+    position: relative;
+    max-width: 509px;
+    padding: 33px 49px 27px 49px;
+    background: #131313 url("../img/bg-lines.svg") no-repeat center;
+    color: #ffffff; }
+  .modal__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    margin: 12px;
+    background: transparent url("/img/close.svg") no-repeat center;
+    border: none;
+    cursor: pointer; }
+  .modal__title {
+    margin: 0;
+    margin-bottom: 34px;
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 19px;
+    text-align: center; }
+  .modal__form {
+    display: flex;
+    flex-direction: column; }
+  .modal__input {
+    margin-bottom: 48px; }
+    .modal__input:last-of-type {
+      margin-bottom: 16px; }
+  .modal__policy {
+    margin-bottom: 2.7rem; }
+  .modal__button {
+    padding: 19px 22px;
+    align-self: flex-end;
+    font-size: 13px;
+    border-radius: none; }
+
+.policy__label--text {
+  font-size: 16px;
+  font-weight: 400; }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {

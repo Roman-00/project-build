@@ -15,6 +15,7 @@
     color: $lite
     box-shadow: 0px 5px 15px rgba($primary, 0.2)
     transition: box-shadow 0.3s
+    font-weight: 500
     &:hover
       box-shadow: none
   &--outline
@@ -25,3 +26,36 @@
     padding: 18px 25px
   &--size
     padding: 18px 42px
+.label
+  font-size: 15px
+  &--lite
+    color: rgba($lite, 0.5)
+.input
+  padding: 0.5rem 0
+  border: none
+  background: transparent
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3)
+  font-size: 18px
+  color: $lite
+  &::placeholder
+    color: $lite
+.policy
+  &__checkbox
+   opacity: 0
+   visibility: hidden
+   &:checked +
+     .policy__label
+       &::before
+         content: ''
+         background: $primary url('../img/check.svg') no-repeat center / 0.8rem
+  &__label
+    display: flex
+    align-items: center
+    &::before
+      content: ''
+      width: 18px
+      height: 18px
+      margin-right: 8px
+      border: 1px solid $primary
+      border-radius: 1px
+      cursor: pointer
