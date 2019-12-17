@@ -11,4 +11,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   closeBtn.addEventListener('click', switchModal);
 
+  window.onclick = function(e) {
+    if(e.target == modal) {
+      modal.style.display="none";
+    }
+  };
+  
 });
