@@ -28,7 +28,7 @@ $(document).ready(function () {
 
   var btn = $("#upbtn");
     $(window).scroll(function(){
-      $(this).scrollTop() < 1500 ? btn.hide() : btn.show();  
+      $(this).scrollTop() < 800 ? btn.hide() : btn.show();  
     });  
     btn.click(function(){
       $("html,body").animate({scrollTop:0},600);
