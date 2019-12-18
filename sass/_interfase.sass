@@ -5,9 +5,12 @@
   font-family: 'Futura Demi';
   font-size: 0.93rem
   text-transform: uppercase
+  outline: 0;
+  outline-offset: 0;
   &:hover
     background-color: #c39f65
     cursor: pointer
+    outline: none
   &--identation
     margin-right: -1px
   &--primary
@@ -18,16 +21,19 @@
     font-weight: 500
     &:hover
       box-shadow: none
+      outline: none
   &--outline
     border: 1px solid $lite
     background-color: transparent
     color: $lite
+    outline: none
   &--more
     padding: 18px 25px
   &--size
     padding: 18px 42px
 .label
   font-size: 15px
+  outline: none
   &--lite
     color: rgba($lite, 0.5)
 .input
@@ -37,17 +43,20 @@
   border-bottom: 1px solid rgba(54, 54, 54, 0.3)
   font-size: 18px
   color: $lite
+  outline: none
   &::placeholder
     color: $lite
 .policy
   &__checkbox
    opacity: 0
    visibility: hidden
+   outline: none
    &:checked +
      .policy__label
        &::before
          content: ''
          background: $primary url('../img/check.svg') no-repeat center / 0.8rem
+         outline: none
   &__label
     display: flex
     align-items: center
@@ -59,3 +68,4 @@
       border: 1px solid $primary
       border-radius: 1px
       cursor: pointer
+      outline: none
