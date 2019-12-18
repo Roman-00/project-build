@@ -12,7 +12,7 @@
   closeBtn.addEventListener('click', switchModal);
 });*/
 
-// jquery code
+// jquery code upbtn
 
 $(document).ready(function () {
   var modal = $('.modal'),
@@ -28,7 +28,7 @@ $(document).ready(function () {
 
   var btn = $("#upbtn");
     $(window).scroll(function(){
-      $(this).scrollTop() < 2000 ? btn.hide() : btn.show();  
+      $(this).scrollTop() < 1500 ? btn.hide() : btn.show();  
     });  
     btn.click(function(){
       $("html,body").animate({scrollTop:0},600);
