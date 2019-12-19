@@ -27,17 +27,19 @@
     flex-direction: row
     align-items: center
   .col
-    flex: 1 1 calc(50% - 30px)
-    max-width: calc(50% - 30px)
-    padding: 0 15px
+    &-30
+      flex: 1 1 calc(50% - 30px)
+      max-width: calc(50% - 30px)
+      padding: 0 15px
 @media screen and ( max-width:760px )
   .row
     flex-direction: column
     align-items: center
   .col
-    flex: 1 1 calc(100% - 30px)
-    max-width: calc(100% - 30px)
-    padding: 0 15px
+    &-30
+      flex: 1 1 calc(100% - 30px)
+      max-width: calc(100% - 30px)
+      padding: 0 15px
   .types
     &__card
       margin-bottom: 5rem

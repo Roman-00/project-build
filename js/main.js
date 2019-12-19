@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(event) {
+/*document.addEventListener("DOMContentLoaded", function(event) {
   const modal = document.querySelector('.modal');
   const modalBtn = document.querySelectorAll('[data-toggle=modal]');
   const closeBtn = document.querySelector('.modal__close');
@@ -22,11 +22,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
       modal.classList.remove('modal--visible');
     } 
   };
-});
+});*/
 
 // jquery code upbtn
 
-/*$(document).ready(function () {
+$(document).ready(function () {
   var modal = $('.modal'),
       modalBtn = $('[data-toggle=modal]'),
       closeBtn = $('.modal__close');
@@ -45,4 +45,26 @@ document.addEventListener("DOMContentLoaded", function(event) {
     btn.click(function(){
       $("html,body").animate({scrollTop:0},600);
     });
-});*/
+
+  //initialize swiper when document ready
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+    navigation: {
+      nextE1: '.swiper-button-next',
+      prevE1: '.swiper-button-prev',
+    },
+  });
+
+  var next = $('.swiper-button-next');
+  var prev = $('.swiper-button-prev');
+  var bullets = $('.swiper-pagination');
+
+  next.css('left', prev.width() + 10 + bullets.width() + 10)
+  bullets.css('left', prev.width() + 10)
+
+});
