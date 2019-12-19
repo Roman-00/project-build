@@ -1,4 +1,4 @@
-/*document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function(event) {
   const modal = document.querySelector('.modal');
   const modalBtn = document.querySelectorAll('[data-toggle=modal]');
   const closeBtn = document.querySelector('.modal__close');
@@ -10,11 +10,23 @@
   });
 
   closeBtn.addEventListener('click', switchModal);
-});*/
+
+  window.onclick=function(e) {
+    if(e.target == modal) {
+      modal.classList.toggle('modal--visible');
+    }
+  };
+
+  window.onkeydown = function(e) {
+    if(e.key === "Escape") {
+      modal.classList.remove('modal--visible');
+    } 
+  };
+});
 
 // jquery code upbtn
 
-$(document).ready(function () {
+/*$(document).ready(function () {
   var modal = $('.modal'),
       modalBtn = $('[data-toggle=modal]'),
       closeBtn = $('.modal__close');
@@ -33,4 +45,4 @@ $(document).ready(function () {
     btn.click(function(){
       $("html,body").animate({scrollTop:0},600);
     });
-});
+});*/
