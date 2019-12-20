@@ -808,7 +808,9 @@ img {
   .col-30 {
     flex: 1 1 calc(50% - 30px);
     max-width: calc(50% - 30px);
-    padding: 0 15px; } }
+    padding: 0 15px; }
+  .design__card {
+    align-items: top; } }
 
 @media screen and (max-width: 760px) {
   .row {
