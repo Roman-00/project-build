@@ -613,6 +613,8 @@ img {
 .swiper-slide {
   display: flex;
   flex-wrap: wrap; }
+  .swiper-slider--image {
+    margin-top: -13rem; }
   .swiper-slide__value {
     display: block;
     max-width: 97px;
@@ -829,7 +831,13 @@ img {
     .design__section-title {
       color: #ffffff; }
   .design__card {
-    margin-bottom: 5.7rem; } }
+    margin-bottom: 5.7rem; }
+  .swiper-slider--image {
+    margin-top: 0; }
+  .mobile-order__top {
+    order: -1; }
+  .col-50 {
+    width: 100%; } }
 
 @media screen and (max-width: 570px) {
   .section__title__description {
