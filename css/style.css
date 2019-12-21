@@ -379,7 +379,8 @@ template {
 
 .policy__label {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  font-size: 16px; }
   .policy__label::before {
     content: '';
     width: 18px;
@@ -389,6 +390,8 @@ template {
     border-radius: 1px;
     cursor: pointer;
     outline: none; }
+  .policy__label--center {
+    justify-content: center; }
 
 .container {
   width: 85%;
@@ -684,73 +687,67 @@ img {
   width: auto;
   bottom: -2px; }
 
-.control__section-title {
-  margin-bottom: 31px;
-  margin-top: -30rem; }
-
-.control__video {
-  position: relative;
-  display: flex;
-  max-width: 817px;
-  min-height: 434px;
-  margin: auto;
-  margin-bottom: 62px;
-  background: #131313 url("../img/control/video-mask.jpg") center no-repeat;
-  object-fit: cover;
-  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15); }
-  .control__video::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(19, 19, 19, 0.8); }
-
-.control__text {
-  max-width: 571px;
-  margin: auto;
-  margin-bottom: 60px;
-  font-weight: normal;
-  font-family: 'Futura Book', sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 34px;
-  text-align: center; }
-  .control__text::before {
-    content: '';
-    display: block;
-    max-width: 55px;
-    height: 2px;
+.control {
+  padding-top: 50px; }
+  .control__section-title {
+    margin-bottom: 31px;
+    margin-top: -30rem; }
+  .control__video {
+    position: relative;
+    display: flex;
+    max-width: 817px;
+    min-height: 434px;
     margin: auto;
-    margin-bottom: 34px;
-    background: #E3B873;
-    border-radius: 30px; }
-
-.control__form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 770px;
-  margin: auto; }
-
-.control__input-group {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 30%; }
-
-.control__label {
-  margin-bottom: -7px; }
-
-.control__button {
-  padding: 18px 67px;
-  box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
-  border-radius: 2px; }
-
-.control__policy {
-  flex-basis: 100%;
-  margin-top: 1.2rem; }
-
-.control__policy-label {
-  justify-content: center; }
+    margin-bottom: 62px;
+    background: #131313 url("../img/control/video-mask.jpg") center no-repeat;
+    object-fit: cover;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15); }
+    .control__video::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(19, 19, 19, 0.8); }
+  .control__text {
+    max-width: 571px;
+    margin: auto;
+    margin-bottom: 60px;
+    font-weight: normal;
+    font-family: 'Futura Book', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: center; }
+    .control__text::before {
+      content: '';
+      display: block;
+      max-width: 55px;
+      height: 2px;
+      margin: auto;
+      margin-bottom: 34px;
+      background: #E3B873;
+      border-radius: 30px; }
+  .control__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 770px;
+    margin: auto; }
+  .control__input-group {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%; }
+  .control__label {
+    margin-bottom: -7px; }
+  .control__button {
+    padding: 18px 67px;
+    box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 2px; }
+  .control__policy {
+    flex-basis: 100%;
+    margin-top: 1.2rem; }
+  .control__policy-label {
+    justify-content: center; }
 
 .video__play {
   position: relative;
@@ -797,12 +794,62 @@ img {
     background-color: #E3B873;
     color: #ffffff; }
 
-.design__section-title {
-  margin-bottom: 2.78rem; }
+.design {
+  padding-bottom: 30rem; }
+  .design__section-title {
+    margin-bottom: 2.78rem; }
+  .design__card--pricetag {
+    padding: 1.214rem 4.1rem;
+    left: 0; }
 
-.design__card--pricetag {
-  padding: 1.214rem 4.1rem;
-  left: 0; }
+.footer {
+  padding-top: 3rem;
+  background: #131313 url("../img/footer/footer-bg.jpg") center no-repeat;
+  background-size: cover; }
+  .footer__wrap {
+    max-width: 883px;
+    margin: auto;
+    margin-top: -20rem;
+    margin-bottom: 52px;
+    padding: 2.5rem;
+    background-color: #181818; }
+  .footer__title {
+    margin-top: 0;
+    margin-bottom: 45px;
+    font-family: 'Yeseva One', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase; }
+  .footer__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 520px;
+    margin: auto; }
+  .footer__input {
+    padding-top: 0.3rem; }
+    .footer__input-group {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 45%;
+      margin-bottom: 3.2rem; }
+      .footer__input-group--full-width {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        margin-bottom: 2rem; }
+  .footer__policy {
+    flex-basis: 100%;
+    margin-bottom: 3.6rem; }
+  .footer__button {
+    margin: auto;
+    padding: 18px 67px;
+    border-radius: none; }
+  .footer__menu {
+    padding: 60px 0px;
+    background: #131313; }
 
 .modal {
   opacity: 0;
@@ -976,6 +1023,8 @@ img {
     order: 1; } }
 
 @media screen and (max-width: 570px) {
+  .menu {
+    padding: 0.8rem; }
   .section__title__description {
     max-width: 21.86rem; }
   .contacts__phone {
@@ -987,6 +1036,8 @@ img {
   .title {
     font-size: 23px;
     max-width: 300px; }
+  .hero__content {
+    padding: 0.8rem; }
   .hero__scroll-down {
     display: none; }
   .hero__text {
@@ -995,7 +1046,12 @@ img {
   .hero__button {
     display: block;
     width: 100%;
-    margin-bottom: 1.85rem; } }
+    margin-bottom: 1.85rem; }
+  .projects {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem; }
+  .control {
+    padding: 0.8rem; } }
 
 @media screen and (max-width: 375px) {
   .container {
@@ -1040,17 +1096,19 @@ img {
   .policy__label--text {
     font-size: 14px;
     font-weight: 400; }
-  .control__video {
-    width: 100%;
-    max-width: 340px;
-    min-height: 207px;
-    background-size: contain;
-    margin-bottom: 27px; }
-  .control__button {
-    position: relative;
-    margin-bottom: -7rem;
-    bottom: 0;
-    padding: 20px 124px; }
+  .control {
+    position: relative; }
+    .control__video {
+      width: 100%;
+      max-width: 340px;
+      min-height: 207px;
+      background-size: contain;
+      margin-bottom: 27px; }
+    .control__button {
+      position: adsolute;
+      bottom: 0;
+      margin-bottom: -2.5rem;
+      padding: 20px 110px; }
   .video__play {
     position: relative;
     margin: auto;
