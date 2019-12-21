@@ -791,28 +791,50 @@ img {
     margin-left: 1rem;
     margin-right: 1rem; }
   .title {
-    max-width: 500px; } }
+    max-width: 500px; }
+  .hero__text {
+    max-width: 450px; } }
 
 @media screen and (max-width: 1070px) {
   .nav {
     display: none; }
   .hero__instagram {
-    display: none; } }
+    display: none; }
+  .section-title__text {
+    font-size: 16px;
+    max-width: 380px; } }
 
 @media screen and (max-width: 992px) {
+  .section-title__text {
+    width: 100%;
+    max-width: 442px;
+    font-size: 18px; }
+  .section-title__word {
+    display: block;
+    font-size: 22px;
+    line-height: 138.6%; }
+  .section-title__heading--primary {
+    font-size: 22px;
+    line-height: 138.6%; }
   .hero__content {
     margin: 0; }
   .row {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: center; }
+    align-items: top; }
   .col-30 {
     flex: 1 1 calc(50% - 30px);
     max-width: calc(50% - 30px);
     padding: 0 15px; }
   .design__card {
-    align-items: top; } }
+    align-items: top; }
+  .swiper-slider--image {
+    margin-top: 0; }
+  .mobile-order__top {
+    order: -1; }
+  .col-50 {
+    width: 100%; } }
 
 @media screen and (max-width: 760px) {
   .row {
@@ -831,13 +853,7 @@ img {
     .design__section-title {
       color: #ffffff; }
   .design__card {
-    margin-bottom: 5.7rem; }
-  .swiper-slider--image {
-    margin-top: 0; }
-  .mobile-order__top {
-    order: -1; }
-  .col-50 {
-    width: 100%; } }
+    margin-bottom: 5.7rem; } }
 
 @media screen and (max-width: 570px) {
   .section__title__description {
@@ -849,11 +865,10 @@ img {
   .contacts__button {
     display: none; }
   .title {
-    font-size: 23px; }
+    font-size: 23px;
+    max-width: 300px; }
   .hero__scroll-down {
     display: none; }
-  .hero__content {
-    max-width: 321px; }
   .hero__text {
     font-size: 18px;
     margin-bottom: 2.28rem; }
@@ -864,7 +879,8 @@ img {
 
 @media screen and (max-width: 375px) {
   .hero__content {
-    margin-left: 18px; }
+    margin-left: 9px;
+    margin-right: 9px; }
   .hero__title {
     font-size: 23px; }
   .hero__text {
@@ -872,13 +888,27 @@ img {
   .menu {
     margin-right: 18px;
     margin-left: 18px; }
+  .section-title--left {
+    text-align: center; }
   .section-title__heading {
     font-size: 22px; }
+    .section-title__heading-primary {
+      font-size: 22px;
+      letter-spacing: -0.07em;
+      line-height: 138.6%; }
   .section-title__description {
     max-width: 306px;
     font-size: 15px; }
+  .section-title__text {
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 36px;
+    font-size: 14px;
+    line-height: 158.48%; }
   .container {
     width: 100%; }
+  .col-50 {
+    margin: 0px 10px 0px 10px; }
   .card {
     margin: 0px 0px 59px 0px; }
     .card__image {
