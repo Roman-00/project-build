@@ -950,7 +950,29 @@ img {
     .design__section-title {
       color: #ffffff; }
   .design__card {
-    margin-bottom: 5.7rem; } }
+    margin-bottom: 5.7rem; }
+  .control {
+    background-color: #131313;
+    color: #ffffff; }
+    .control-section-title {
+      font-size: 22px;
+      line-height: 138.6%; }
+    .control__text {
+      max-width: 350px;
+      font-size: 14px;
+      line-height: 169.8%; }
+    .control__form {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 100%; }
+    .control__input-bottom {
+      margin-bottom: 63px; }
+    .control__policy {
+      margin-top: 28px;
+      margin-bottom: 63px; }
+  .mobile-order__bottom {
+    order: 1; } }
 
 @media screen and (max-width: 570px) {
   .section__title__description {
@@ -975,16 +997,13 @@ img {
     margin-bottom: 1.85rem; } }
 
 @media screen and (max-width: 375px) {
-  .hero__content {
-    margin-left: 9px;
-    margin-right: 9px; }
+  .container {
+    width: 100%;
+    max-width: 330px; }
   .hero__title {
     font-size: 23px; }
   .hero__text {
     font-size: 18px; }
-  .menu {
-    margin-right: 18px;
-    margin-left: 18px; }
   .section-title--left {
     text-align: center; }
   .section-title__heading {
@@ -1002,10 +1021,6 @@ img {
     margin-bottom: 36px;
     font-size: 14px;
     line-height: 158.48%; }
-  .container {
-    width: 100%; }
-  .col-50 {
-    margin: 0px 10px 0px 10px; }
   .card {
     margin: 0px 0px 59px 0px; }
     .card__image {
@@ -1013,7 +1028,7 @@ img {
     .card__title {
       font-size: 15px; }
     .card__text {
-      max-width: 270px;
+      max-width: 260px;
       box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.05); }
     .card__list {
       font-size: 13px; }
@@ -1023,4 +1038,13 @@ img {
       box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3); }
   .policy__label--text {
     font-size: 14px;
-    font-weight: 400; } }
+    font-weight: 400; }
+  .control__button {
+    position: relative;
+    margin-bottom: -7rem;
+    bottom: 0;
+    padding: 20px 124px; }
+  .swiper-slide__heading {
+    font-size: 14px; }
+  .swiper-slide__value {
+    font-size: 14px; } }
