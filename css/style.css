@@ -1055,10 +1055,10 @@ img {
     margin: auto;
     width: 37px;
     height: 37px; }
-  .swiper-slide img {
+  .swiper-slide__images {
     width: 100%;
     max-width: 340px;
-    height: auto; }
+    min-height: 201px; }
   .swiper-slide__heading {
     font-size: 14px; }
   .swiper-slide__value {
