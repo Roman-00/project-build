@@ -1039,11 +1039,22 @@ img {
   .policy__label--text {
     font-size: 14px;
     font-weight: 400; }
+  .control__video {
+    width: 100%;
+    max-width: 340px;
+    min-height: 207px;
+    background-size: contain;
+    margin-bottom: 27px; }
   .control__button {
     position: relative;
     margin-bottom: -7rem;
     bottom: 0;
     padding: 20px 124px; }
+  .video__play {
+    position: relative;
+    margin: auto;
+    width: 37px;
+    height: 37px; }
   .swiper-slide__heading {
     font-size: 14px; }
   .swiper-slide__value {
