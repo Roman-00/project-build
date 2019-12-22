@@ -90,8 +90,13 @@
     &__card
       margin-bottom: 5.7rem
   .control
+    position: relative
     background-color: $dark
     color: $lite
+    &__button
+      position: adsolute
+      bottom: 0
+      margin-bottom: -7rem
     &-section
       &-title
         font-size: 22px
@@ -148,7 +153,11 @@
     padding-left: 0.8rem
     padding-right: 0.8rem
   .control
-    padding: 0.8rem
+    position: relative
+    &__button
+      position: adsolute
+      bottom: 0
+      margin-bottom: -7rem
 @media screen and ( max-width:375px )
   .container
     width: 100%
@@ -199,6 +208,8 @@
         font-weight: 400
   .control
     position: relative
+    padding: 0.8rem
+    padding-top: 50px
     &__video
       width: 100%
       max-width: 340px

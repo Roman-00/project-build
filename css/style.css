@@ -850,6 +850,29 @@ img {
   .footer__menu {
     padding: 60px 0px;
     background: #131313; }
+  .footer__map {
+    margin-bottom: 66px; }
+    .footer__map--wrap {
+      max-width: 920px;
+      min-height: 465px;
+      margin: auto; }
+    .footer__map--heading {
+      max-width: 500px;
+      margin: auto;
+      margin-bottom: 29px;
+      font-family: 'Yeseva One', cursive;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 28px;
+      text-align: center;
+      color: #E3B873;
+      text-transform: uppercase; }
+
+.map-title__image {
+  margin-bottom: 43px; }
+
+.map-img__right {
+  margin-right: 15px; }
 
 .modal {
   opacity: 0;
@@ -1000,8 +1023,13 @@ img {
   .design__card {
     margin-bottom: 5.7rem; }
   .control {
+    position: relative;
     background-color: #131313;
     color: #ffffff; }
+    .control__button {
+      position: adsolute;
+      bottom: 0;
+      margin-bottom: -7rem; }
     .control-section-title {
       font-size: 22px;
       line-height: 138.6%; }
@@ -1051,7 +1079,11 @@ img {
     padding-left: 0.8rem;
     padding-right: 0.8rem; }
   .control {
-    padding: 0.8rem; } }
+    position: relative; }
+    .control__button {
+      position: adsolute;
+      bottom: 0;
+      margin-bottom: -7rem; } }
 
 @media screen and (max-width: 375px) {
   .container {
@@ -1097,7 +1129,9 @@ img {
     font-size: 14px;
     font-weight: 400; }
   .control {
-    position: relative; }
+    position: relative;
+    padding: 0.8rem;
+    padding-top: 50px; }
     .control__video {
       width: 100%;
       max-width: 340px;
