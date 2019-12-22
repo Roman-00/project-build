@@ -79,6 +79,43 @@ $(document).ready(function () {
   );
   wow.init();
 
+  // Валидация формы
+  $('.modal__form').validate({
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        maxlength: 15,
+        minlength: 2
+      },
+      userPhone: "required",
+      userQuestion: "required",
+      // правило обьект
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },// сообщения
+    messages: {
+      userName: {
+        required: "Имя обязательно, Заполните поле",
+        minlength: "Имя не должно быть короче 2 символов",
+        maxlength: "Имя не должно превышать 15 символов"
+      },
+      userQuestion: "Вопрос обязательно",
+      userPhone: "Телефон обязателен",
+      userEmail: {
+        required: "Обязательно укажите e-mail",
+        email: "Введите корректный email Пример: name@domain.com"
+      }
+    },
+    errorElement: "div",
+    errorClass: "invalid",
+  });
+
+  //Маска для телефона
+  $('[type=tel]').mask('+7(707) 80-71-888', {placeholder: "+7 (___) __-__-___"});
+
   // создание yandex карт
   // Функция ymaps.ready() будет вызвана, когда
   // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
