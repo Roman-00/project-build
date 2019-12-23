@@ -79,7 +79,7 @@ $(document).ready(function () {
   );
   wow.init();
 
-  // Валидация формы
+  // Валидация формы в модальном окне
   $('.modal__form').validate({
     rules: {
       // строчное правило
@@ -89,7 +89,37 @@ $(document).ready(function () {
         minlength: 2
       },
       userPhone: "required",
-      userQuestion: "required",
+      // правило обьект
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },// сообщения
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не должно быть короче 2 символов",
+        maxlength: "Имя не должно превышать 15 символов"
+      },
+      userPhone: "Телефон обязателен",
+      userEmail: {
+        required: "Обязательно укажите e-mail",
+        email: "Введите корректный email Пример: name@domain.com"
+      }
+    },
+    errorElement: "div",
+    errorClass: "invalid",
+  });
+
+  // Валидация формы в секции контроль
+  $('.control__form').validate({
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        maxlength: 15,
+        minlength: 2
+      },
       // правило обьект
       userEmail: {
         required: true,
@@ -102,8 +132,6 @@ $(document).ready(function () {
         minlength: "Имя не должно быть короче 2 символов",
         maxlength: "Имя не должно превышать 15 символов"
       },
-      userQuestion: "Вопрос обязательно",
-      userPhone: "Телефон обязателен",
       userEmail: {
         required: "Обязательно укажите e-mail",
         email: "Введите корректный email Пример: name@domain.com"

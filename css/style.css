@@ -930,8 +930,7 @@ img {
     flex-direction: column; }
   .modal__input-group {
     display: flex;
-    flex-direction: column;
-    margin-bottom: 48px; }
+    flex-direction: column; }
   .modal__input:last-of-type {
     margin-bottom: 16px; }
   .modal__policy {
