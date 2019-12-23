@@ -134,8 +134,34 @@ $(document).ready(function () {
       },
       userEmail: {
         required: "Обязательно укажите e-mail",
-        email: "Введите корректный email Пример: name@domain.com"
+        email: "Введите корректный email"
       }
+    },
+    errorElement: "div",
+    errorClass: "invalid",
+  });
+
+   // Валидация формы в footer секция
+   $('.footer__form').validate({
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        maxlength: 15,
+        minlength: 2
+      },
+      userPhone: "required",
+      userQuestion: "required",
+      // правило обьект
+    },// сообщения
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не должно быть короче 2 символов",
+        maxlength: "Имя не должно превышать 15 символов"
+      },
+      userPhone: "Телефон обязателен",
+      userQuestion: "Обязательно введите свой вопрос!",
     },
     errorElement: "div",
     errorClass: "invalid",

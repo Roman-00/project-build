@@ -365,6 +365,8 @@ template {
   font-size: 18px;
   color: #ffffff;
   outline: none; }
+  .input--group {
+    position: relative; }
   .input--lignt::placeholder {
     color: #ffffff; }
 

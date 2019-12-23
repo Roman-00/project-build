@@ -5,12 +5,13 @@
   $userQuestion = $_POST['userQuestion'];
 
   // Load Composer's autoloader
-  require 'phpmailer/Exception.php';
-  require 'phpmailer/PhpMailer.php';
-  require 'phpmailer/SMTP.php';
+  require '../phpmailer/Exception.php';
+  require '../phpmailer/PHPMailer.php';
+  require '../phpmailer/SMTP.php';
 
   // Instantiation and passing `true` enables exceptions
   $mail = new PHPMailer\PHPMailer\PHPMailer();
+  $mail->CharSet = "utf-8";
 
   try {
     //Server settings
@@ -29,7 +30,7 @@
 
       // Content
       $mail->isHTML(true);                                  // Set email format to HTML
-      $mail->Subject = 'New application from the site';
+      $mail->Subject = 'Новая заявка с сайта';
       $mail->Body    = "Имя пользователя ${userName},<br> Номер Телефона ${userPhone}.<br> Email пользователя ${userEmail}.<br> Вопрос ${userQuestion}";
 
       $mail->send();
