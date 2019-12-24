@@ -885,6 +885,10 @@ img {
       color: #E3B873;
       text-transform: uppercase; }
 
+.map--heading__phone {
+  color: #E3B873;
+  text-decoration: none; }
+
 .map-title__image {
   margin-bottom: 43px; }
 
