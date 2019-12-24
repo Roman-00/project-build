@@ -120,11 +120,8 @@ $(document).ready(function () {
         maxlength: 15,
         minlength: 2
       },
+      userPhone: "required",
       // правило обьект
-      userEmail: {
-        required: true,
-        email: true
-      }
     },// сообщения
     messages: {
       userName: {
@@ -132,10 +129,7 @@ $(document).ready(function () {
         minlength: "Имя не должно быть короче 2 символов",
         maxlength: "Имя не должно превышать 15 символов"
       },
-      userEmail: {
-        required: "Обязательно укажите e-mail",
-        email: "Введите корректный email"
-      }
+      userPhone: "Телефон обязателен",
     },
     errorElement: "div",
     errorClass: "invalid",

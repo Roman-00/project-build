@@ -121,6 +121,9 @@
       &__bottom
         order: 1
 @media screen and ( max-width:570px )
+  .container
+    width: 100%
+    max-width: 330px
   .menu
     padding: 0.8rem
   .section
@@ -158,6 +161,35 @@
       position: adsolute
       bottom: 0
       margin-bottom: -7rem
+  .footer
+    background: $dark
+    &__title
+      font-size: 20px
+    &__wrap
+      width: 100%
+      padding: 0
+      background: $dark
+    &__form
+      display: flex
+      flex-wrap: wrap 
+      flex-direction: column
+      width: 100%
+    &__map
+      display: flex
+      flex-wrap: wrap
+      flex-direction: row
+      &--heading
+        font-size: 18px
+        line-height: 138.6%
+        margin-top: 41px
+        margin-bottom: 23px
+      &--wrap
+        order: -1
+  .map
+    margin-bottom: 0
+    &-title
+      &__image
+        margin-bottom: 0
 @media screen and ( max-width:375px )
   .container
     width: 100%
@@ -237,12 +269,4 @@
         font-size: 14px
       &__value
         font-size: 14px
-  .footer
-    &__map
-      &--heading
-        font-size: 18px
-        line-height: 138.6%
-        margin-top: 41px
-        margin-bottom: 23px
-    &__wrap
-      margin-top: -25rem
+  

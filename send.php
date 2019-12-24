@@ -11,10 +11,10 @@
 
   // Instantiation and passing `true` enables exceptions
   $mail = new PHPMailer\PHPMailer\PHPMailer();
-  $mail->CharSet = "utf-8";
 
   try {
     //Server settings
+      $mail->CharSet = "utf-8";
       $mail->SMTPDebug = 0;                      // Enable verbose debug output
       $mail->isSMTP();                                            // Send using SMTP
       $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through

@@ -46,7 +46,7 @@
   outline: none
   &--group
     position: relative
-  &--lignt
+  &--light
     &::placeholder
       color: $lite
 .policy
@@ -77,6 +77,12 @@
       justify-content: center
 .invalid
   color: $tomato
+  &.alert
+    display: none
 input
   &.invalid
     border-bottom: 1px solid $tomato
+div
+  &.invalid
+    position: absolute
+    margin-top: 51px
