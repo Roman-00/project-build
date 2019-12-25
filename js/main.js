@@ -163,12 +163,9 @@ $(document).ready(function () {
 
   //Маска для телефона
   $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "+7 (___) __-__-___"});
-
-  // создание yandex карт
-  // Функция ymaps.ready() будет вызвана, когда
-  // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+  // Создаём макет содержимого.  
   ymaps.ready(function () {
-    var myMap = new ymaps.Map('map', {
+    var myMap = new ymaps.Map('map-in', {
             center: [47.244734, 39.723227],
             zoom: 18
         }, {
@@ -181,14 +178,14 @@ $(document).ready(function () {
         ),
 
         myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-            hintContent: 'Наш офис',
-            balloonContent: 'Вход со двора'
+            hintContent: 'Собственный значок метки',
+            balloonContent: 'Это красивая метка'
         }, {
             // Опции.
             // Необходимо указать данный тип макета.
             iconLayout: 'default#image',
             // Своё изображение иконки метки.
-            iconImageHref: 'img/location.png',
+            iconImageHref: '/img/location.png',
             // Размеры метки.
             iconImageSize: [32, 32],
             // Смещение левого верхнего угла иконки относительно
@@ -197,6 +194,6 @@ $(document).ready(function () {
         });
     myMap.behaviors.disable('scrollZoom');
     myMap.geoObjects
-        .add(myPlacemark);
+        .add(myPlacemark)
   });
 });
