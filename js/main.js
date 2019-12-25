@@ -125,7 +125,7 @@ $(document).ready(function () {
     },// сообщения
     messages: {
       userName: {
-        required: "Имя обязательно, Заполните поле",
+        required: "Имя обязательно",
         minlength: "Имя не должно быть короче 2 символов",
         maxlength: "Имя не должно превышать 15 символов"
       },
