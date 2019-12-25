@@ -941,11 +941,13 @@ img {
   .modal__form {
     display: flex;
     flex-direction: column; }
-  .modal__input-group {
-    display: flex;
-    flex-direction: column; }
-  .modal__input:last-of-type {
-    margin-bottom: 16px; }
+  .modal__input {
+    margin-bottom: 46px; }
+    .modal__input-group {
+      display: flex;
+      flex-direction: column; }
+      .modal__input-group:last-of-type {
+        margin-bottom: 16px; }
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {
