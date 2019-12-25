@@ -405,7 +405,7 @@ input.invalid {
 
 div.invalid {
   position: absolute;
-  margin-top: 51px; }
+  margin-top: 55px; }
 
 .container {
   width: 85%;
@@ -946,8 +946,6 @@ img {
     .modal__input-group {
       display: flex;
       flex-direction: column; }
-      .modal__input-group:last-of-type {
-        margin-bottom: 16px; }
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {
@@ -959,6 +957,9 @@ img {
 .policy__label--text {
   font-size: 16px;
   font-weight: 400; }
+
+#user-email {
+  margin-bottom: 16px; }
 
 .upbtn {
   position: fixed;
