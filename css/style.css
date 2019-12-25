@@ -1155,7 +1155,11 @@ img {
   .upbtn {
     right: 30px;
     bottom: 20px;
-    padding: 15px; } }
+    padding: 15px; }
+  .footer__map--wrap {
+    width: 100%;
+    max-width: 340px;
+    min-height: 255px; } }
 
 @media screen and (max-width: 375px) {
   .container {
@@ -1230,5 +1234,5 @@ img {
     font-size: 14px; }
   .footer__map--wrap {
     width: 100%;
-    max-width: 340px;
-    min-height: 255px; } }
+    max-width: 280px;
+    min-height: 230px; } }
