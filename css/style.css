@@ -829,7 +829,7 @@ img {
     margin-top: -20rem;
     margin-bottom: 52px;
     padding: 2.5rem;
-    background-color: #181818; }
+    background: #181818 url("../img/footer/line_bg.svg") center; }
   .footer__title {
     margin-top: 0;
     margin-bottom: 45px;
