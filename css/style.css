@@ -650,7 +650,7 @@ img {
 
 .projects {
   padding-bottom: 30rem;
-  background: #131313 url("/img/projects/project-bg.png") no-repeat bottom; }
+  background: #131313 url("../img/projects/project-bg.png") no-repeat bottom; }
   .projects__title {
     font-size: 27px; }
 
