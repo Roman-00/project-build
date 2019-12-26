@@ -1148,6 +1148,8 @@ img {
         margin-bottom: 23px; }
       .footer__map--wrap {
         order: -1; }
+    .footer__menu {
+      display: none; }
   .map {
     margin-bottom: 0; }
     .map-title__image {

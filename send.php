@@ -14,6 +14,7 @@ $mail = new PHPMailer\PHPMailer\PHPMailer();
 
 try {
     //Server settings
+    $mail -> charSet = "utf-8";
     $mail->SMTPDebug = 0;                      // Enable verbose debug output
     $mail->isSMTP();                                            // Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
@@ -24,8 +25,8 @@ try {
     $mail->Port       = 465;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('rvasin00@gmail.com');
-    $mail->addAddress('rvasin00@mail.ru');     // Add a recipient
+    $mail->setFrom('rvasin00@gmail.com', 'Роман');
+    $mail->addAddress('romanvasin265@gmailcom');     // Add a recipient
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
