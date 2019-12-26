@@ -164,7 +164,7 @@ $(document).ready(function () {
   //Маска для телефона
   $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "+7 (___) __-__-___"});
 
-  /* Создаём макет содержимого карты.  
+  //Создаём макет содержимого карты.  
   ymaps.ready(function () {
     var myMap = new ymaps.Map('map-in', {
             center: [47.244734, 39.723227],
@@ -196,5 +196,5 @@ $(document).ready(function () {
     myMap.behaviors.disable('scrollZoom');
     myMap.geoObjects
         .add(myPlacemark)
-  });*/
+  });
 });
