@@ -819,6 +819,9 @@ img {
     padding: 1.214rem 4.1rem;
     left: 0; }
 
+.team {
+  padding-bottom: 30rem; }
+
 .footer {
   padding-top: 3rem;
   background: #131313 url("../img/footer/footer-bg.jpg") no-repeat;
@@ -872,7 +875,7 @@ img {
     .footer__map--wrap {
       width: 100%;
       max-width: 925px;
-      min-height: 465px;
+      height: 465px;
       margin: auto; }
     .footer__map--heading {
       max-width: 500px;
@@ -959,7 +962,7 @@ img {
   font-size: 16px;
   font-weight: 400; }
 
-#user-email {
+#modal-user-email {
   margin-bottom: 16px; }
 
 .upbtn {
@@ -1237,4 +1240,4 @@ img {
   .footer__map--wrap {
     width: 100%;
     max-width: 280px;
-    min-height: 230px; } }
+    height: 230px; } }

@@ -15,6 +15,7 @@ $mail = new PHPMailer\PHPMailer\PHPMailer();
 
 try {
     //Server settings
+    $mail->CharSet = 'UTF-8';
     $mail->SMTPDebug = 0;                      // Enable verbose debug output
     $mail->isSMTP();                                            // Send using SMTP
     $mail->Host       = 'smtp.mail.ru';                    // Set the SMTP server to send through
@@ -26,15 +27,18 @@ try {
 
     //Recipients
     $mail->setFrom('rvasin00@mail.ru', 'Роман');
-    $mail->addAddress('rvasin00@gmail.com');     // Add a recipient
+    $mail->addAddress('lilukpimp@gmail.com');     // Add a recipient
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'Новая заявка с сайта';
     $mail->Body    = "Имя пользователя: ${userName},<br> Его телефон: ${userPhone}.<br> Его почта: ${userEmail}.<br> Вопрос: ${userQuestion}";
 
-    $mail->send();
-    header('Location: thanks.html');
+    if ($mail->send()) {
+        echo "Ок";
+    } else {
+        echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
+    }
 } catch (Exception $e) {
     echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
 }

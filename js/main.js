@@ -109,6 +109,23 @@ $(document).ready(function () {
     },
     errorElement: "div",
     errorClass: "invalid",
+
+    // Jquery Ajax form
+    submitHandler: function(form) {
+     $.ajax({
+       type: "POST",
+       url: "send.php",
+       data: $(form).serialize(),
+       success: function (response) {
+         alert('Форма отправленна, мы свяжимся с вами через 10 минут');
+         $(form)[0].reset();
+         modal.removeClass('modal--visible');
+       },
+       error: function (response) {
+         console.error('Ошибка запроса! ' + response);
+       }
+     });
+    },
   });
 
   // Валидация формы в секции контроль
@@ -133,6 +150,23 @@ $(document).ready(function () {
     },
     errorElement: "div",
     errorClass: "invalid",
+
+    // Jquery Ajax form
+    submitHandler: function(form) {
+     $.ajax({
+       type: "POST",
+       url: "send.php",
+       data: $(form).serialize(),
+       success: function (response) {
+         alert('Форма отправленна, мы свяжимся с вами через 10 минут');
+         $(form)[0].reset();
+         modal.removeClass('modal--visible');
+       },
+       error: function (response) {
+         console.error('Ошибка запроса! ' + response);
+       }
+     });
+    },
   });
 
    // Валидация формы в footer секция
@@ -159,6 +193,23 @@ $(document).ready(function () {
     },
     errorElement: "div",
     errorClass: "invalid",
+
+    // Jquery Ajax form
+    submitHandler: function(form) {
+     $.ajax({
+       type: "POST",
+       url: "send.php",
+       data: $(form).serialize(),
+       success: function (response) {
+         alert('Форма отправленна, мы свяжимся с вами через 10 минут');
+         $(form)[0].reset();
+         modal.removeClass('modal--visible');
+       },
+       error: function (response) {
+         console.error('Ошибка запроса! ' + response);
+       }
+     });
+    },
   });
 
   //Маска для телефона
