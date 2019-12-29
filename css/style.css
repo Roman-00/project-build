@@ -811,59 +811,13 @@ img {
     background-color: #E3B873;
     color: #ffffff; }
 
-.design__section-title {
-  margin-bottom: 2.78rem; }
-
-.design__card--pricetag {
-  padding: 1.214rem 4.1rem;
-  left: 0; }
-
-.team {
+.design {
   padding-bottom: 30rem; }
-  .team__card {
-    margin-top: 39px; }
-  .team-title__description {
-    width: 100%;
-    max-width: 442px;
-    font-family: 'Futura Book', sans-serif;
-    font-size: 20px;
-    line-height: 27px;
-    text-align: center; }
-  .team-card {
-    position: relative; }
-    .team-card__text {
-      width: 100%;
-      max-width: 227px;
-      margin-top: -6rem;
-      padding: 22px 20px 24px 20px; }
-    .team-card__description {
-      margin: 0px 0px 24px 0px;
-      color: #959595;
-      font-family: 'Futura Book', sans-serif;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 26px;
-      text-align: center; }
-    .team-card__title {
-      text-align: center;
-      margin-bottom: 9px; }
-    .team-card__pricetag {
-      width: 100%;
-      padding: 14px 0px 14px 0px;
-      text-align: center;
-      cursor: pointer; }
-
-.card {
-  position: relative; }
-  .card__images--top {
-    position: absolute;
-    display: block;
-    top: 0;
-    padding: 13px 13px;
-    margin-top: -2.5rem;
-    margin-left: -2.5rem;
-    background: #E3B873;
-    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5); }
+  .design__section-title {
+    margin-bottom: 2.78rem; }
+  .design__card--pricetag {
+    padding: 1.214rem 4.1rem;
+    left: 0; }
 
 .footer {
   padding-top: 3rem;
@@ -1179,6 +1133,8 @@ img {
       .team-card__text {
         margin: -6rem auto;
         margin-bottom: 54px; }
+    .team__control--text {
+      display: none; }
   .footer {
     background: #131313; }
     .footer__title {
