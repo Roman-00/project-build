@@ -416,6 +416,8 @@ div.invalid {
   display: flex;
   align-items: flex-start;
   justify-content: space-between; }
+  .row__around {
+    justify-content: space-around; }
 
 .col-30 {
   flex-basis: 31%; }
@@ -811,13 +813,76 @@ img {
     background-color: #E3B873;
     color: #ffffff; }
 
-.design {
+.design__section-title {
+  margin-bottom: 2.78rem; }
+
+.design__card--pricetag {
+  padding: 1.214rem 4.1rem;
+  left: 0; }
+
+.team {
   padding-bottom: 30rem; }
-  .design__section-title {
-    margin-bottom: 2.78rem; }
-  .design__card--pricetag {
-    padding: 1.214rem 4.1rem;
-    left: 0; }
+  .team-title__heading {
+    font-size: 20px;
+    font-family: 'Yeseva One', cursive; }
+  .team-title__description {
+    width: 100%;
+    max-width: 448px; }
+  .team__text {
+    max-width: 568px;
+    margin: auto;
+    font-weight: normal;
+    font-family: 'Futura Book', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: center; }
+    .team__text::before {
+      content: '';
+      display: block;
+      max-width: 55px;
+      height: 2px;
+      margin: auto;
+      margin-bottom: 16px;
+      background: #E3B873;
+      border-radius: 30px; }
+  .team__card {
+    position: relative;
+    margin-top: 59px;
+    margin-bottom: 66px; }
+    .team__card--text {
+      position: relative;
+      max-width: 232px;
+      margin: auto;
+      margin-top: -5.80rem;
+      padding: 22px 20px;
+      background-color: #ffffff;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+      text-align: center; }
+    .team__card--title {
+      margin-bottom: 9px; }
+    .team__card--image {
+      max-width: 100%; }
+    .team__card--description {
+      margin: 0;
+      margin-bottom: 14px;
+      font-family: 'Futura Book', sans-serif;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 400;
+      color: #959595; }
+    .team__card--pricetag {
+      width: 100%;
+      padding: 13px 0px;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 20px;
+      text-transform: uppercase; }
+    .team__card--top {
+      position: absolute;
+      margin: -35px 0px 0px -35px;
+      padding: 13px;
+      background: #E3B873; }
 
 .footer {
   padding-top: 3rem;
@@ -1008,6 +1073,11 @@ img {
     right: 20px;
     bottom: 20px;
     padding: 15px; } }
+
+.col-20 {
+  flex: 1 1 calc(50% - 30px);
+  max-width: calc(50% - 30px);
+  padding: 0 15px; }
 
 @media screen and (max-width: 992px) {
   .section-title__text {
