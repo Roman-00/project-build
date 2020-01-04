@@ -35,11 +35,19 @@
     right: 20px
     bottom: 20px
     padding: 15px
-.col
-  &-20
-    flex: 1 1 calc(50% - 30px)
-    max-width: calc(50% - 30px)
-    padding: 0 15px
+  .row
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    align-items: top
+  .col
+    &-30
+      flex: 1 1 calc(50% - 30px)
+      max-width: calc(50% - 30px)
+      padding: 0 15px
+  .clients
+    &__card
+      margin-bottom: 7rem
 @media screen and ( max-width:992px )
   .section
     &-title
