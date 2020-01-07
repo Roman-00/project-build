@@ -5,6 +5,7 @@
   background-size: cover
   &__title
     margin-top: 16px
+    margin-bottom: 135px
     font-size: 27px
     &--description
       margin-bottom: 0px
@@ -22,11 +23,17 @@
         height: 1px
         margin-left: 6.2rem
         background-color: $primary
+  &-pagination
+    &__center
+      position: absolute
+      margin-top: -14px
   &-slide
     display: flex
     justify-content: space-between
     flex-wrap: wrap
     width: 100%
+    &__pagination
+      margin-top: 66px
     &__title
       max-width: 262px
       font-family: 'Yeseva One', cursive
@@ -38,7 +45,8 @@
     &__description
       max-width: 337px
       font-size: 15px
-      line-height: 25px 
+      line-height: 25px
+      margin-bottom: 0
     &__text
       margin-bottom: 36px
     &__heading
@@ -64,8 +72,8 @@
       font-weight: 400
       font-family: 'Futura Book', sans-serif
       line-height: 18px
-      &--size
-        max-width: 97px
 .col
   &-60
     margin-top: 80px
+.swiper-pagination-bullet
+  margin-left: 7px
