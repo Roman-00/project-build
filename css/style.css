@@ -425,6 +425,9 @@ div.invalid {
 .col-50 {
   width: 50%; }
 
+.col-60 {
+  width: 60%; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -820,70 +823,144 @@ img {
   padding: 1.214rem 4.1rem;
   left: 0; }
 
-.team-title__heading {
-  font-size: 20px;
-  font-family: 'Yeseva One', cursive; }
+.steps {
+  margin-top: -38rem;
+  padding: 30rem 0 35rem 0;
+  background: #131313 url("../img/steps/steps-bg.svg") no-repeat center;
+  background-size: cover; }
+  .steps__title {
+    margin-top: 16px;
+    font-size: 27px; }
+    .steps__title--description {
+      margin-bottom: 0px;
+      font-family: 'Futura Book', sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 21px;
+      text-transform: uppercase; }
+    .steps__title--word {
+      display: flex;
+      align-items: center; }
+      .steps__title--word::after {
+        content: '';
+        width: 92px;
+        height: 1px;
+        margin-left: 6.2rem;
+        background-color: #E3B873; }
+  .steps-slide {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%; }
+    .steps-slide__title {
+      max-width: 262px;
+      font-family: 'Yeseva One', cursive;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 23px;
+      text-transform: uppercase;
+      color: #E3B873; }
+    .steps-slide__description {
+      max-width: 337px;
+      font-size: 15px;
+      line-height: 25px; }
+    .steps-slide__text {
+      margin-bottom: 36px; }
+    .steps-slide__heading {
+      margin-bottom: 4px;
+      font-family: 'Yeseva One', cursive;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 21px;
+      text-transform: uppercase; }
+      .steps-slide__heading::after {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 100%;
+        max-width: 16px;
+        margin-bottom: 11px;
+        text-align: center;
+        background: #E3B873; }
+    .steps-slide__value {
+      display: block;
+      max-width: 136px;
+      font-size: 15px;
+      font-weight: 400;
+      font-family: 'Futura Book', sans-serif;
+      line-height: 18px; }
+      .steps-slide__value--size {
+        max-width: 97px; }
 
-.team-title__description {
-  width: 100%;
-  max-width: 448px; }
+.col-60 {
+  margin-top: 80px; }
 
-.team__text {
-  max-width: 568px;
-  margin: auto;
-  font-weight: normal;
-  font-family: 'Futura Book', sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 34px;
-  text-align: center; }
-  .team__text::before {
-    content: '';
-    display: block;
-    max-width: 55px;
-    height: 2px;
-    margin: auto;
-    margin-bottom: 16px;
-    background: #E3B873;
-    border-radius: 30px; }
-
-.team__card {
-  position: relative;
-  margin-top: 59px;
-  margin-bottom: 66px; }
-  .team__card--text {
-    position: relative;
-    max-width: 232px;
-    margin: auto;
-    margin-top: -5.80rem;
-    padding: 22px 20px;
-    background-color: #ffffff;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
-    text-align: center; }
-  .team__card--title {
-    margin-bottom: 9px; }
-  .team__card--image {
-    max-width: 100%; }
-  .team__card--description {
-    margin: 0;
-    margin-bottom: 14px;
-    font-family: 'Futura Book', sans-serif;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 400;
-    color: #959595; }
-  .team__card--pricetag {
+.team {
+  margin-top: -34rem; }
+  .team-title__heading {
+    font-size: 20px;
+    font-family: 'Yeseva One', cursive;
+    color: #ffffff; }
+  .team-title__description {
     width: 100%;
-    padding: 13px 0px;
-    font-size: 13px;
+    max-width: 448px;
+    color: #ffffff; }
+  .team__text {
+    max-width: 568px;
+    margin: auto;
+    font-weight: normal;
+    font-family: 'Futura Book', sans-serif;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 20px;
-    text-transform: uppercase; }
-  .team__card--top {
-    position: absolute;
-    margin: -35px 0px 0px -35px;
-    padding: 13px;
-    background: #E3B873; }
+    line-height: 34px;
+    text-align: center; }
+    .team__text::before {
+      content: '';
+      display: block;
+      max-width: 55px;
+      height: 2px;
+      margin: auto;
+      margin-bottom: 16px;
+      background: #E3B873;
+      border-radius: 30px; }
+  .team__card {
+    position: relative;
+    margin-top: 59px;
+    margin-bottom: 66px;
+    max-width: 252px; }
+    .team__card--text {
+      position: relative;
+      max-width: 232px;
+      margin: auto;
+      margin-top: -5.80rem;
+      padding: 22px 20px;
+      background-color: #ffffff;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+      text-align: center; }
+    .team__card--title {
+      margin-bottom: 9px; }
+    .team__card--image {
+      max-width: 100%; }
+    .team__card--description {
+      margin: 0;
+      margin-bottom: 14px;
+      font-family: 'Futura Book', sans-serif;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 400;
+      color: #959595; }
+    .team__card--pricetag {
+      width: 100%;
+      padding: 13px 0px;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 20px;
+      text-transform: uppercase; }
+    .team__card--top {
+      position: absolute;
+      margin: -35px 0px 0px -35px;
+      padding: 13px;
+      background: #E3B873; }
 
 .clients {
   padding-bottom: 30rem;
@@ -1275,6 +1352,7 @@ img {
       bottom: 0;
       margin-bottom: -7rem; }
   .team {
+    margin-top: 0px;
     background-color: #131313; }
     .team__section-title {
       color: #ffffff; }
@@ -1285,7 +1363,12 @@ img {
         margin-bottom: 54px; }
     .team__control--text {
       display: none; }
+  .steps {
+    display: none; }
+  .clients {
+    display: none; }
   .footer {
+    padding-top: 0;
     background: #131313; }
     .footer__title {
       font-size: 20px; }
