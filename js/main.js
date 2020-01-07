@@ -60,9 +60,23 @@ $(document).ready(function () {
     },
   });
 
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    loop: true,
+    pagination: {
+      el: '.swiper-fraction',
+      type: 'fraction',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
   var next = $('.swiper-button-next');
   var prev = $('.swiper-button-prev');
   var bullets = $('.swiper-pagination');
+  var fraction = $('.swiper-fraction');
 
   next.css('left', prev.width() + 10 + bullets.width() + 10);
   bullets.css('left', prev.width() + 10);
@@ -158,7 +172,8 @@ $(document).ready(function () {
        url: "send.php",
        data: $(form).serialize(),
        success: function (response) {
-         alert('Форма отправленна, мы свяжимся с вами через 10 минут');
+         let ownModal = document.getElementById('ownModal');
+         ownModal.classList.add('active');
          $(form)[0].reset();
          modal.removeClass('modal--visible');
        },

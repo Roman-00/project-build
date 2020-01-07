@@ -830,7 +830,7 @@ img {
   background-size: cover; }
   .steps__title {
     margin-top: 16px;
-    margin-bottom: 135px;
+    margin-bottom: 92px;
     font-size: 27px; }
     .steps__title--description {
       margin-bottom: 0px;
@@ -902,6 +902,14 @@ img {
 
 .swiper-pagination-bullet {
   margin-left: 7px; }
+
+.swiper-pagination-fraction {
+  margin-bottom: 22px;
+  font-family: 'Yeseva One', cursive;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+  text-transform: uppercase; }
 
 .team {
   margin-top: -34rem; }
@@ -1120,6 +1128,33 @@ img {
 .map-img__right {
   margin-right: 15px; }
 
+.active {
+  opacity: 1;
+  visibility: visible; }
+
+#ownModal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.6);
+  z-index: 199; }
+
+.ownModal__dialog {
+  position: relative;
+  max-width: 509px;
+  padding: 33px 49px 27px 49px;
+  background: #131313 url("../img/bg-lines.svg") no-repeat center;
+  color: #ffffff; }
+
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -1302,6 +1337,8 @@ img {
       position: adsolute;
       bottom: 0;
       margin-bottom: -7rem; }
+    .control__input {
+      color: #ffffff; }
     .control-section-title {
       font-size: 22px;
       line-height: 138.6%; }
@@ -1496,4 +1533,6 @@ img {
   .footer__map--wrap {
     width: 100%;
     max-width: 280px;
-    height: 230px; } }
+    height: 230px; }
+  .footer__button {
+    width: 100%; } }
