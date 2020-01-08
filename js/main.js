@@ -60,23 +60,37 @@ $(document).ready(function () {
     },
   });
 
-  var mySwiper = new Swiper ('.swiper-container', {
-    // Optional parameters
+  var swiper = new Swiper('.steps-slider', {
     loop: true,
     pagination: {
       el: '.swiper-fraction',
       type: 'fraction',
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.steps-button-next',
+      prevEl: '.steps-button-prev',
     },
   });
+
+  var swiper = new Swiper('.steps-slider', {
+    loop: true,
+    pagination: {
+      el: '.steps-pagination',
+      type: 'bullets',
+    },
+    navigation: {
+      nextEl: '.steps-button-next',
+      prevEl: '.steps-button-prev',
+    },
+  });
+
+  var next = $('.steps-button-next');
+  var prev = $('.steps-button-prev');
 
   var next = $('.swiper-button-next');
   var prev = $('.swiper-button-prev');
   var bullets = $('.swiper-pagination');
-  var fraction = $('.swiper-fraction');
+
 
   next.css('left', prev.width() + 10 + bullets.width() + 10);
   bullets.css('left', prev.width() + 10);

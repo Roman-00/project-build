@@ -1,88 +1,76 @@
 .steps
-  margin-top: -38rem
-  padding: 30rem 0 35rem 0
+  margin-top: -40rem
+  padding: 35rem 0 35rem 0
   background: $dark url('../img/steps/steps-bg.svg') no-repeat center
   background-size: cover
   &__title
-    margin-top: 16px
     margin-bottom: 92px
+    font-family: 'Yeseva One', cursive
     font-size: 27px
-    &--description
-      margin-bottom: 0px
-      font-family: 'Futura Book', sans-serif
-      font-size: 15px
-      font-weight: 500
-      line-height: 21px
-      text-transform: uppercase
-    &--word
+    font-weight: 400
+    line-height: 37px
+    text-transform: uppercase
+  &__inscription
+    margin-bottom: 18px
+    font-family: 'Futura Book', sans-serif
+    font-weight: 500
+    font-size: 15px
+    line-height: 21px
+    text-transform: uppercase
+  &-title
+    text-align: center
+    &__word
       display: flex
+      justify-content: space-between
       align-items: center
       &::after
         content: ''
         width: 92px
         height: 1px
-        margin-left: 6.2rem
         background-color: $primary
-  &-pagination
-    &__center
-      position: absolute
-      margin-top: -14px
-  &-slide
+  &__navigation
     display: flex
-    justify-content: space-between
-    flex-wrap: wrap
-    width: 100%
-    &__pagination
-      margin-top: 66px
-    &__title
+    align-items: center
+  &-pagination
+    margin: 0px 29px 0px 29px
+  &-button
+    &-prev, &-next
+      bottom: 0
+      top: auto
+      background-size: 42px
+      width: 42px
+      height: 14px
+      &::after
+       display: none 
+    &-prev
+      left: 0
+      background: url('../img/arrow-prew.svg') no-repeat center 
+    &-next
+      background: url('../img/arrow-next.svg') no-repeat center
+  &__text
+    &--title
       max-width: 262px
+      margin-bottom: 16px
       font-family: 'Yeseva One', cursive
       font-size: 15px
       font-weight: 400
       line-height: 23px
       text-transform: uppercase
-      color: $primary 
-    &__description
+    &--description
       max-width: 337px
-      font-size: 15px
-      line-height: 25px
-      margin-bottom: 0
-    &__text
-      margin-bottom: 36px
-    &__heading
-      margin-bottom: 4px
-      font-family: 'Yeseva One', cursive
-      font-size: 15px
-      font-weight: 400
-      line-height: 21px
-      text-transform: uppercase
-      &::after
-        content: ''
-        display: block
-        height: 1px
-        width: 100%
-        max-width: 16px
-        margin-bottom: 11px
-        text-align: center
-        background: $primary
-    &__value
-      display: block
-      max-width: 136px
-      font-size: 15px
-      font-weight: 400
       font-family: 'Futura Book', sans-serif
-      line-height: 18px
-.col
-  &-60
-    margin-top: 80px
-.swiper-pagination-bullet
-  margin-left: 7px
-.swiper
-  &-pagination
-    &-fraction
-      margin-bottom: 22px
-      font-family: 'Yeseva One', cursive
-      font-size: 18px
-      font-weight: normal
+      font-size: 15px
+      font-weight: 400
       line-height: 25px
-      text-transform: uppercase
+    &--bottom
+      margin-bottom: 66px
+.steps-pagination>.swiper-pagination-bullet
+  margin: 0px 4px
+.swiper
+  &-fraction
+    margin-bottom: 22px
+    font-family: 'Yeseva One', cursive
+    font-size: 18px
+    font-weight: 400
+    line-height: 25px
+    text-transform: uppercase
