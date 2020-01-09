@@ -74,3 +74,48 @@
     font-weight: 400
     line-height: 25px
     text-transform: uppercase
+.slider
+  &-steps
+    &__navigation
+      display: flex
+      flex-wrap: wrap
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+.navigation
+  &__text
+    &--number
+      font-family: 'Yeseva One', cursive
+      font-size: 15px
+      font-weight: 400
+      line-height: 21px
+      text-transform: uppercase
+      &::after
+        content: ''
+        display: block
+        width: 16px
+        height: 1px
+        margin-top: 4px
+        background: $primary
+    &--description
+      width: 100%
+      max-width: 127px
+      display: block
+      font-family: 'Futura Book', sans-serif
+      font-size: 15px
+      font-weight: 400
+      ine-height: 18px
+.slide
+  &__navigation
+    &--text
+      width: 100%
+      max-width: 190px
+      margin-bottom: 36px
+.navigation
+  &__description
+    &--size
+      max-width: 100px
+.slider-steps__navigation>.slide__navigation--text
+  opacity: 0.4
+.slider-steps__navigation>.slide__navigation--active
+  opacity: 1
