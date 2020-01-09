@@ -16,17 +16,17 @@
     <div class="container">
 
       <div class="menu">
-        <span class="logo menu__logo">Repair Design Project</span>
+        <a href="index.html" class="logo__link"><span class="logo menu__logo">Repair Design Project</span><a>
         <nav class="nav menu__nav">
           <a href="index.html" class="nav__item">Главная</a>
           <!-- /.nav__item -->
-          <a href="#" class="nav__item">Проекты</a>
+          <a href="#projects" class="nav__item">Проекты</a>
           <!-- /.nav__item -->
-          <a href="#" class="nav__item">Замер</a>
+          <a href="#steps" class="nav__item">Замер</a>
           <!-- /.nav__item -->
-          <a href="#" class="nav__item">Команда</a>
+          <a href="#team" class="nav__item">Команда</a>
           <!-- /.nav__item -->
-          <a href="#" class="nav__item">Отзывы</a>
+          <a href="#clients" class="nav__item">Отзывы</a>
           <!-- /.nav__item -->
           <a href="#" class="nav__item">Контакты</a>
           <!-- /.nav__item -->
@@ -76,7 +76,7 @@
     </section>
     <!-- /#hero.hero -->
 
-    <section class="section section--dark projects">
+    <section class="section section--dark projects" id="projects">
       <div class="container">
         <div class="section-title section-title--left">
           <h2 class="section-title__heading section-title__heading--primary projects__title wow fadeInLeft">Завершенные <span class="section-title__word">проекты</span></h2>
@@ -90,7 +90,7 @@
             <!-- Slider main container -->
             <div class="swiper-container">
               <!-- Additional required wrapper -->
-              <div class="swiper-wrapper swiper-no-swiping">
+              <div class="swiper-wrapper swiper-no-swiping projects__wrapper--bottom">
                 <!-- Slides -->
                 <div class="swiper-slide">
                   <div class="swiper-slide__text">
@@ -223,7 +223,7 @@
           <!-- /.section-title__img -->
         </div>
         <!-- /.section-title -->
-        <div class="control__video video wow fadeInUp">
+        <div class="control__video video" id="player">
           <img src="img/play-icon.svg" alt="Play" class="video__play">
         </div>
         <!-- /.control__video video -->
@@ -502,7 +502,7 @@
     </section>
     <!-- /.section design -->
 
-    <section class="section section--dark steps">
+    <section class="section section--dark steps" id="steps">
       <div class="container">
         <div class="row">
           <div class="col-30">
@@ -624,7 +624,7 @@
     </section>
     <!-- /.section section--dark -->
 
-    <section class="section team">
+    <section class="section team" id="team">
       <div class="container">
         <div class="section-title">
           <h2 class="section-title__heading team-title__heading">Наша команда</h2>
@@ -714,7 +714,7 @@
     </section>
     <!-- /.section team -->
 
-    <section class="section clients">
+    <section class="section clients" id="clients">
       <div class="container">
         <div class="section-title clients__title">
           <h2 class="section-title__heading clients-title__heading">Наши клиенты</h2>
@@ -952,10 +952,8 @@
   </div>
   <!-- /.modal -->
 
-  <div class="ownModal" id="ownModal">
-    <div class="ownModal__dialog">
-      <p class="ownModal__text">Форма отправленна, мы свяжимся с вами через 10 минут</p>
-    </div>
+  <div id="ownModal" class="ownModal--none">
+    Форма отправленна, мы свяжимся с вами через 10 минут
   </div>
   <!-- /#ownModal.ownModal -->
 
@@ -968,6 +966,7 @@
   <script src="js/wow.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=9c039322-d642-4d73-a0a6-fb585150ad07&lang=ru_RU" type="text/javascript"></script>
   <script src="js/main.js"></script>
 </body>

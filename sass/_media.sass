@@ -152,6 +152,12 @@
   .menu
     padding: 0.8rem
   .section
+    &-title
+      &__description
+        max-width: 320px
+        font-size: 16px
+      &__text
+        font-size: 16px
     &__title
       &__description
         max-width: 21.86rem
@@ -182,10 +188,22 @@
     padding-right: 0.8rem
   .control
     position: relative
+    padding: 0.8rem
+    padding-top: 50px
+    padding-bottom: 5rem
     &__button
       position: adsolute
       bottom: 0
       margin-bottom: -7rem
+    &__video
+      width: 100%
+      max-width: 340px
+      min-height: 207px
+      background-size: contain
+      margin-bottom: 27px
+  .video
+    &__play
+      width: 70px
   .team
     margin-top: 0px
     padding-bottom: 25rem
@@ -248,7 +266,8 @@
         width: 100%
         max-width: 340px
         min-height: 255px
-
+    &__button
+      width: 100%
 @media screen and ( max-width:375px )
   .container
     width: 100%
@@ -320,12 +339,13 @@
       height: 37px
   .team
     margin-top: -2rem
-    padding: 0px 20px 20rem 20px
+    padding: 0px 5px 20rem 30px
     &__text
       display: none
     &__card
       &--top
         padding: 9px
+        margin-left: -33px
   .swiper
     &-slide
       &__images
@@ -342,6 +362,4 @@
         width: 100%
         max-width: 280px
         height: 230px
-    &__button
-      width: 100%
   
