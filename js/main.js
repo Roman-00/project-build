@@ -60,7 +60,7 @@ $(document).ready(function () {
     },
   });
 
-  var swiper = new Swiper('.steps-slider', {
+  var mySwiper = new Swiper('.steps-slider', {
     loop: true,
     pagination: {
       el: '.swiper-fraction',
@@ -72,16 +72,21 @@ $(document).ready(function () {
     },
   });
 
-  var swiper = new Swiper('.steps-slider', {
+  var mySwiper = new Swiper('.steps-slider', {
     loop: true,
     pagination: {
       el: '.steps-pagination',
       type: 'bullets',
+      clickable: true,
     },
     navigation: {
       nextEl: '.steps-button-next',
       prevEl: '.steps-button-prev',
     },
+  });
+  $('.swiper-menu').on('click',  '.swiper-menu__item', function() {
+    const index = $(this).data('index')
+    mySwiper.slideTo(index)
   });
 
   var next = $('.steps-button-next');
@@ -116,6 +121,9 @@ $(document).ready(function () {
         maxlength: 15,
         minlength: 2
       },
+      checkboxModal: {
+        required: true
+      },
       userPhone: "required",
       // правило обьект
       userEmail: {
@@ -128,6 +136,9 @@ $(document).ready(function () {
         required: "Заполните поле",
         minlength: "Имя не должно быть короче 2 символов",
         maxlength: "Имя не должно превышать 15 символов"
+      },
+      checkboxModal: {
+        required: "Отметьте галочку",
       },
       userPhone: "Телефон обязателен",
       userEmail: {
@@ -145,7 +156,12 @@ $(document).ready(function () {
        url: "send.php",
        data: $(form).serialize(),
        success: function (response) {
-         alert('Форма отправленна, мы свяжимся с вами через 10 минут');
+        let ownModal = document.getElementById('ownModal');
+        ownModal.classList.add('active');
+        const RemoveOwnModal = () => {
+         ownModal.classList.remove('active')
+        };
+        setTimeout(RemoveOwnModal, 3000); 
          $(form)[0].reset();
          modal.removeClass('modal--visible');
        },
@@ -165,6 +181,9 @@ $(document).ready(function () {
         maxlength: 15,
         minlength: 2
       },
+      checkboxControl: {
+        required: true
+      },
       userPhone: "required",
       // правило обьект
     },// сообщения
@@ -173,6 +192,9 @@ $(document).ready(function () {
         required: "Имя обязательно",
         minlength: "Имя не должно быть короче 2 символов",
         maxlength: "Имя не должно превышать 15 символов"
+      },
+      checkboxControl: {
+        required: "Отметьте галочку",
       },
       userPhone: "Телефон обязателен",
     },
@@ -188,6 +210,10 @@ $(document).ready(function () {
        success: function (response) {
          let ownModal = document.getElementById('ownModal');
          ownModal.classList.add('active');
+         const RemoveOwnModal = () => {
+          ownModal.classList.remove('active')
+         };
+         setTimeout(RemoveOwnModal, 3000); 
          $(form)[0].reset();
          modal.removeClass('modal--visible');
        },
@@ -207,6 +233,9 @@ $(document).ready(function () {
         maxlength: 15,
         minlength: 2
       },
+      checkboxFooter: {
+        required: true
+      },
       userPhone: "required",
       userQuestion: "required",
       // правило обьект
@@ -216,6 +245,9 @@ $(document).ready(function () {
         required: "Заполните поле",
         minlength: "Имя не должно быть короче 2 символов",
         maxlength: "Имя не должно превышать 15 символов"
+      },
+      checkboxFooter: {
+        required: "Отметьте галочку",
       },
       userPhone: "Телефон обязателен",
       userQuestion: "Обязательно введите свой вопрос!",
@@ -230,7 +262,12 @@ $(document).ready(function () {
        url: "send.php",
        data: $(form).serialize(),
        success: function (response) {
-         alert('Форма отправленна, мы свяжимся с вами через 10 минут');
+        let ownModal = document.getElementById('ownModal');
+        ownModal.classList.add('active');
+        const RemoveOwnModal = () => {
+         ownModal.classList.remove('active')
+        };
+        setTimeout(RemoveOwnModal, 3000); 
          $(form)[0].reset();
          modal.removeClass('modal--visible');
        },

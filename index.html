@@ -247,8 +247,8 @@
             Отправить
           </button> 
           <div class="policy control__policy fadeInUp">
-            <input type="checkbox" name="policy-checkbox" id="control-policy-checkbox" class="policy__checkbox" checked>
-            <label for="control-checkbox" class="policy__label policy__label--text control__policy-label">Я соглашаюсь с обработкой данных</label>
+            <input type="checkbox" name="checkboxControl" id="control-policy-checkbox" class="policy__checkbox" checked>
+            <label for="control-policy-checkbox" class="policy__label policy__label--text control__policy-label">Я соглашаюсь с обработкой данных</label>
           </div>
           <!-- /.policy -->
         </form>
@@ -543,8 +543,8 @@
           </div>
           <!-- /.col__30 -->
           <div class="col-60">
-            <div class="slider-steps__navigation">
-              <div class="slide__navigation--text">
+            <div class="slider-steps__navigation swiper-menu">
+              <div class="slide__navigation--text swiper-menu__item swiper-menu__item--active" data-index="0">
                 <h3 class="navigation__text--number">
                   01
                 </h3>
@@ -554,7 +554,7 @@
                 </span> <!-- /.navigation__text--description -->
               </div>
               <!-- /.slide__navigation--text -->
-              <div class="slide__navigation--text">
+              <div class="slide__navigation--text swiper-menu__item" data-index="1">
                 <h3 class="navigation__text--number">
                   02
                 </h3>
@@ -564,7 +564,7 @@
                 </span> <!-- /.navigation__text--description -->
               </div>
               <!-- /.slide__navigation--text -->
-              <div class="slide__navigation--text">
+              <div class="slide__navigation--text swiper-menu__item" data-index="2">
                 <h3 class="navigation__text--number">
                   03
                 </h3>
@@ -574,7 +574,7 @@
                 </span> <!-- /.navigation__text--description -->
               </div>
               <!-- /.slide__navigation--text -->
-              <div class="slide__navigation--text">
+              <div class="slide__navigation--text swiper-menu__item" data-index="3">
                 <h3 class="navigation__text--number">
                   04
                 </h3>
@@ -584,7 +584,7 @@
                 </span> <!-- /.navigation__text--description -->
               </div>
               <!-- /.slide__navigation--text -->
-              <div class="slide__navigation--text">
+              <div class="slide__navigation--text swiper-menu__item" data-index="4">
                 <h3 class="navigation__text--number">
                   05
                 </h3>
@@ -594,7 +594,7 @@
                 </span> <!-- /.navigation__text--description -->
               </div>
               <!-- /.slide__navigation--text -->
-              <div class="slide__navigation--text">
+              <div class="slide__navigation--text swiper-menu__item" data-index="5">
                 <h3 class="navigation__text--number">
                   06
                 </h3>
@@ -634,7 +634,7 @@
           </div>
           <!-- /.section-title__img -->
           <p class="section-title__description team-title__description">
-            Наша команда помогла стать счастливее более чем 500 семьям, и мы не собираемся останавливаться
+            Наша команда помогла стать счастливeе более чем 500 семьям, и мы не собираемся останавливаться
           </p>
           <!-- /.section-title__description -->
         </div>
@@ -846,8 +846,8 @@
           </div>
           <!-- /.input-group footer__input-group -->
           <div class="policy footer__policy">
-            <input type="checkbox" name="policy-checkbox" id="footer-policy-checkbox" class="policy__checkbox" checked>
-            <label for="footer-checkbox" class="policy__label policy__label--text policy__label--center">Я соглашаюсь с обработкой данных</label>
+            <input type="checkbox" name="checkboxFooter" id="footer-policy-checkbox" class="policy__checkbox" checked>
+            <label for="footer-policy-checkbox" class="policy__label policy__label--text policy__label--center">Я соглашаюсь с обработкой данных</label>
           </div>
           <!-- /.policy -->
           <button class="button button--primary footer__button">
@@ -938,8 +938,8 @@
         </div>
         <!-- /.input-group modal__input-group -->
         <div class="policy modal__policy fadeInUp">
-          <input type="checkbox" name="policy-checkbox" id="modal-policy-checkbox" class="policy__checkbox" checked>
-          <label for="policy-checkbox" class="policy__label policy__label--text ">Я соглашаюсь с обработкой данных</label>
+          <input type="checkbox" name="checkboxModal" id="modal-policy-checkbox" class="policy__checkbox" checked>
+          <label for="modal-policy-checkbox" class="policy__label policy__label--text ">Я соглашаюсь с обработкой данных</label>
         </div>
         <!-- /.policy -->
         <button type="submit" class="button button--primary modal__button">
@@ -950,10 +950,17 @@
     </div>
     <!-- /.modal__dialog -->
   </div>
-  <!-- /.modal -->
+  <!-- /.modal --> 
 
-  <div id="ownModal" class="ownModal--none">
-    Форма отправленна, мы свяжимся с вами через 10 минут
+  <div id="ownModal" class="ownModal">
+    <div class="ownModal__dialoge">
+      <span class="ownModal__text">
+        Форма отправленна, мы свяжимся с вами через 10 минут
+      </span> 
+      <!-- /.ownModal__text -->
+      <button class="button button--primary ownModal__close">Ок</button>
+    </div>
+    <!-- /.ownModal__dialoge -->
   </div>
   <!-- /#ownModal.ownModal -->
 

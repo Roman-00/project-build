@@ -82,6 +82,8 @@
       flex-direction: row
       justify-content: space-between
       align-items: center
+      &:nth-child(2n)
+        border: 1px solid red
 .navigation
   &__text
     &--number
@@ -111,11 +113,10 @@
       width: 100%
       max-width: 190px
       margin-bottom: 36px
+      opacity: 0.6
 .navigation
   &__description
     &--size
       max-width: 100px
-.slider-steps__navigation>.slide__navigation--text
-  opacity: 0.4
-.slider-steps__navigation>.slide__navigation--active
+.swiper-menu__item--active
   opacity: 1

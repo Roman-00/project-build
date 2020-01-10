@@ -495,6 +495,23 @@ img {
       font-size: 20px;
       line-height: 135.84%; }
 
+#checkboxModal-error {
+  position: absolute;
+  margin-top: 2rem; }
+
+#checkboxControl-error {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 2rem;
+  text-align: center; }
+
+#checkboxFooter-error {
+  position: absolute;
+  margin: auto;
+  margin-top: 2rem;
+  margin-left: 9.3rem; }
+
 @keyframes animateLeft {
   from {
     transform: translateX(-4em) skewX(-45deg); }
@@ -910,6 +927,8 @@ img {
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
+  .slider-steps__navigation:nth-child(2n) {
+    border: 1px solid red; }
 
 .navigation__text--number {
   font-family: 'Yeseva One', cursive;
@@ -937,15 +956,13 @@ img {
 .slide__navigation--text {
   width: 100%;
   max-width: 190px;
-  margin-bottom: 36px; }
+  margin-bottom: 36px;
+  opacity: 0.6; }
 
 .navigation__description--size {
   max-width: 100px; }
 
-.slider-steps__navigation > .slide__navigation--text {
-  opacity: 0.4; }
-
-.slider-steps__navigation > .slide__navigation--active {
+.swiper-menu__item--active {
   opacity: 1; }
 
 .team {
@@ -1165,14 +1182,49 @@ img {
 .map-img__right {
   margin-right: 15px; }
 
-#ownModal {
+.ownModal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  background-color: rgba(19, 19, 19, 0.6);
   z-index: 199; }
+  .ownModal__text {
+    display: block;
+    text-align: left;
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5; }
+  .ownModal__close {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 100px;
+    margin: 12px 14px 14px 14px;
+    border: none;
+    cursor: pointer;
+    outline: none; }
+  .ownModal__dialoge {
+    position: relative;
+    max-width: 509px;
+    padding: 33px 49px 27px 49px;
+    background: #131313 url("../img/bg-lines.svg") no-repeat center;
+    color: #ffffff; }
 
-#ownModal > .active {
-  display: block; }
-
-.ownModal--none {
-  display: none; }
+.active {
+  opacity: 1;
+  visibility: visible; }
 
 .modal {
   opacity: 0;
