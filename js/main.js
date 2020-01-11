@@ -114,13 +114,6 @@ $(document).ready(function () {
     stepsSwiper.slideTo(e);
   });
 
-  stepsSwiper.on('click', 'slideChange', (function () {
-    let e = stepsSwiper.activeIndex - 1;
-    if (e === 6) {e=0};
-    $('.steps__tabs-item').removeClass('active');
-    $('.steps__tabs-item').eq(e).addClass('active');
-  }));
-
   var next = $('.steps__swiper-button-next');
   var prev = $('.steps__swiper-button-prev');
   var bullets = $('.steps__swiper-pagination');
