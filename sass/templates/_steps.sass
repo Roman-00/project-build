@@ -3,6 +3,33 @@
   padding: 35rem 0 35rem 0
   background: $dark url('../img/steps/steps-bg.svg') no-repeat center
   background-size: cover
+  &__pagination
+    display: flex
+    align-items: center
+  &__row
+    margin-top: 4.7rem
+  &__swiper
+    &-button
+      &-prev, &-next
+        bottom: 0
+        top: auto
+        background-size: 42px
+        width: 42px
+        height: 14px
+        &::after
+          display: none
+      &-prev
+        left: 0
+        margin-right: 10px
+        background: url('../img/arrow-prew.svg') no-repeat center 
+      &-next
+        margin-left: 10px
+        background: url('../img/arrow-next.svg') no-repeat center
+    &-pagination
+      &-bullet
+        background-color: rgba($lite, 0.3)
+        &-active
+          background-color: $lite
   &__title
     margin-bottom: 92px
     font-family: 'Yeseva One', cursive
@@ -11,6 +38,7 @@
     line-height: 37px
     text-transform: uppercase
   &__inscription
+    margin-top: -2.5rem
     margin-bottom: 18px
     font-family: 'Futura Book', sans-serif
     font-weight: 500
@@ -21,32 +49,14 @@
     text-align: center
     &__word
       display: flex
-      justify-content: space-between
       align-items: center
       &::after
         content: ''
+        display: block
         width: 92px
         height: 1px
+        margin-left: 6rem
         background-color: $primary
-  &__navigation
-    display: flex
-    align-items: center
-  &-pagination
-    margin: 0px 29px 0px 29px
-  &-button
-    &-prev, &-next
-      bottom: 0
-      top: auto
-      background-size: 42px
-      width: 42px
-      height: 14px
-      &::after
-       display: none 
-    &-prev
-      left: 0
-      background: url('../img/arrow-prew.svg') no-repeat center 
-    &-next
-      background: url('../img/arrow-next.svg') no-repeat center
   &__text
     &--title
       max-width: 262px
@@ -64,29 +74,21 @@
       line-height: 25px
     &--bottom
       margin-bottom: 66px
-.steps-pagination>.swiper-pagination-bullet
-  margin: 0px 4px
-.swiper
-  &-fraction
-    margin-bottom: 22px
-    font-family: 'Yeseva One', cursive
-    font-size: 18px
-    font-weight: 400
-    line-height: 25px
-    text-transform: uppercase
-.slider
-  &-steps
-    &__navigation
-      display: flex
-      flex-wrap: wrap
-      flex-direction: row
-      justify-content: space-between
-      align-items: center
-      &:nth-child(2n)
-        border: 1px solid red
-.navigation
-  &__text
-    &--number
+  &__tabs
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    justify-content: space-between
+    &:nth-child(3n+2)
+      display: block
+      margin: auto
+      margin-left: 500px
+    &-item
+      width: 100%
+      max-width: 30%
+      margin: auto
+      margin-bottom: 36px
+    &-number
       font-family: 'Yeseva One', cursive
       font-size: 15px
       font-weight: 400
@@ -97,26 +99,27 @@
         display: block
         width: 16px
         height: 1px
-        margin-top: 4px
+        margin-top: 3px
         background: $primary
-    &--description
-      width: 100%
+    &-text
       max-width: 127px
       display: block
       font-family: 'Futura Book', sans-serif
       font-size: 15px
       font-weight: 400
-      ine-height: 18px
-.slide
-  &__navigation
-    &--text
-      width: 100%
-      max-width: 190px
-      margin-bottom: 36px
-      opacity: 0.6
-.navigation
-  &__description
-    &--size
-      max-width: 100px
-.swiper-menu__item--active
-  opacity: 1
+      line-height: 18px
+    &-width
+      display: block
+.swiper
+  &-pagination
+    &-bullet
+      margin: 0px 3px 0px 3px
+    &-fraction
+      margin-bottom: 22px
+      font-family: 'Yeseva One', cursive
+      font-size: 18px
+      font-weight: 400
+      line-height: 25px
+      text-transform: uppercase
+.steps__tabs-item
+  opacity: 0.6

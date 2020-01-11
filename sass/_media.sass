@@ -191,6 +191,8 @@
     padding: 0.8rem
     padding-top: 50px
     padding-bottom: 5rem
+    &__policy-label
+      justify-content: flex-start
     &__button
       position: adsolute
       bottom: 0
@@ -205,9 +207,12 @@
     &__play
       width: 70px
   .team
-    margin-top: 0px
+    margin-top: -2rem
+    padding: 0px 5px 20rem 30px
     padding-bottom: 25rem
     background-color: $dark
+    &__text
+      display: none
     &__section-title
       color: $lite
     &-card
@@ -264,10 +269,21 @@
     &__map
       &--wrap
         width: 100%
-        max-width: 340px
-        min-height: 255px
+        max-width: 280px
+        height: 230px
     &__button
       width: 100%
+  .policy
+    &__label
+      &--center
+        justify-content: flex-start
+  #player
+    width: 100%
+    height: 207px
+  .swiper
+    &-button
+      &-next
+        margin-left: 2px
 @media screen and ( max-width:375px )
   .container
     width: 100%
@@ -338,8 +354,6 @@
       width: 37px
       height: 37px
   .team
-    margin-top: -2rem
-    padding: 0px 5px 20rem 30px
     &__text
       display: none
     &__card

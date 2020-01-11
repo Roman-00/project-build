@@ -850,6 +850,30 @@ img {
   padding: 35rem 0 35rem 0;
   background: #131313 url("../img/steps/steps-bg.svg") no-repeat center;
   background-size: cover; }
+  .steps__pagination {
+    display: flex;
+    align-items: center; }
+  .steps__row {
+    margin-top: 4.7rem; }
+  .steps__swiper-button-prev, .steps__swiper-button-next {
+    bottom: 0;
+    top: auto;
+    background-size: 42px;
+    width: 42px;
+    height: 14px; }
+    .steps__swiper-button-prev::after, .steps__swiper-button-next::after {
+      display: none; }
+  .steps__swiper-button-prev {
+    left: 0;
+    margin-right: 10px;
+    background: url("../img/arrow-prew.svg") no-repeat center; }
+  .steps__swiper-button-next {
+    margin-left: 10px;
+    background: url("../img/arrow-next.svg") no-repeat center; }
+  .steps__swiper-pagination-bullet {
+    background-color: rgba(255, 255, 255, 0.3); }
+    .steps__swiper-pagination-bullet-active {
+      background-color: #ffffff; }
   .steps__title {
     margin-bottom: 92px;
     font-family: 'Yeseva One', cursive;
@@ -858,6 +882,7 @@ img {
     line-height: 37px;
     text-transform: uppercase; }
   .steps__inscription {
+    margin-top: -2.5rem;
     margin-bottom: 18px;
     font-family: 'Futura Book', sans-serif;
     font-weight: 500;
@@ -868,31 +893,14 @@ img {
     text-align: center; }
     .steps-title__word {
       display: flex;
-      justify-content: space-between;
       align-items: center; }
       .steps-title__word::after {
         content: '';
+        display: block;
         width: 92px;
         height: 1px;
+        margin-left: 6rem;
         background-color: #E3B873; }
-  .steps__navigation {
-    display: flex;
-    align-items: center; }
-  .steps-pagination {
-    margin: 0px 29px 0px 29px; }
-  .steps-button-prev, .steps-button-next {
-    bottom: 0;
-    top: auto;
-    background-size: 42px;
-    width: 42px;
-    height: 14px; }
-    .steps-button-prev::after, .steps-button-next::after {
-      display: none; }
-  .steps-button-prev {
-    left: 0;
-    background: url("../img/arrow-prew.svg") no-repeat center; }
-  .steps-button-next {
-    background: url("../img/arrow-next.svg") no-repeat center; }
   .steps__text--title {
     max-width: 262px;
     margin-bottom: 16px;
@@ -909,11 +917,47 @@ img {
     line-height: 25px; }
   .steps__text--bottom {
     margin-bottom: 66px; }
+  .steps__tabs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between; }
+    .steps__tabs:nth-child(3n+2) {
+      display: block;
+      margin: auto;
+      margin-left: 500px; }
+    .steps__tabs-item {
+      width: 100%;
+      max-width: 30%;
+      margin: auto;
+      margin-bottom: 36px; }
+    .steps__tabs-number {
+      font-family: 'Yeseva One', cursive;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 21px;
+      text-transform: uppercase; }
+      .steps__tabs-number::after {
+        content: '';
+        display: block;
+        width: 16px;
+        height: 1px;
+        margin-top: 3px;
+        background: #E3B873; }
+    .steps__tabs-text {
+      max-width: 127px;
+      display: block;
+      font-family: 'Futura Book', sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 18px; }
+    .steps__tabs-width {
+      display: block; }
 
-.steps-pagination > .swiper-pagination-bullet {
-  margin: 0px 4px; }
+.swiper-pagination-bullet {
+  margin: 0px 3px 0px 3px; }
 
-.swiper-fraction {
+.swiper-pagination-fraction {
   margin-bottom: 22px;
   font-family: 'Yeseva One', cursive;
   font-size: 18px;
@@ -921,49 +965,8 @@ img {
   line-height: 25px;
   text-transform: uppercase; }
 
-.slider-steps__navigation {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-  .slider-steps__navigation:nth-child(2n) {
-    border: 1px solid red; }
-
-.navigation__text--number {
-  font-family: 'Yeseva One', cursive;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 21px;
-  text-transform: uppercase; }
-  .navigation__text--number::after {
-    content: '';
-    display: block;
-    width: 16px;
-    height: 1px;
-    margin-top: 4px;
-    background: #E3B873; }
-
-.navigation__text--description {
-  width: 100%;
-  max-width: 127px;
-  display: block;
-  font-family: 'Futura Book', sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  ine-height: 18px; }
-
-.slide__navigation--text {
-  width: 100%;
-  max-width: 190px;
-  margin-bottom: 36px;
+.steps__tabs-item {
   opacity: 0.6; }
-
-.navigation__description--size {
-  max-width: 100px; }
-
-.swiper-menu__item--active {
-  opacity: 1; }
 
 .team {
   margin-top: -34rem; }
@@ -1471,6 +1474,8 @@ img {
     padding: 0.8rem;
     padding-top: 50px;
     padding-bottom: 5rem; }
+    .control__policy-label {
+      justify-content: flex-start; }
     .control__button {
       position: adsolute;
       bottom: 0;
@@ -1484,9 +1489,12 @@ img {
   .video__play {
     width: 70px; }
   .team {
-    margin-top: 0px;
+    margin-top: -2rem;
+    padding: 0px 5px 20rem 30px;
     padding-bottom: 25rem;
     background-color: #131313; }
+    .team__text {
+      display: none; }
     .team__section-title {
       color: #ffffff; }
     .team-card {
@@ -1539,10 +1547,17 @@ img {
     padding: 15px; }
   .footer__map--wrap {
     width: 100%;
-    max-width: 340px;
-    min-height: 255px; }
+    max-width: 280px;
+    height: 230px; }
   .footer__button {
-    width: 100%; } }
+    width: 100%; }
+  .policy__label--center {
+    justify-content: flex-start; }
+  #player {
+    width: 100%;
+    height: 207px; }
+  .swiper-button-next {
+    margin-left: 2px; } }
 
 @media screen and (max-width: 375px) {
   .container {
@@ -1607,14 +1622,11 @@ img {
     margin: auto;
     width: 37px;
     height: 37px; }
-  .team {
-    margin-top: -2rem;
-    padding: 0px 5px 20rem 30px; }
-    .team__text {
-      display: none; }
-    .team__card--top {
-      padding: 9px;
-      margin-left: -33px; }
+  .team__text {
+    display: none; }
+  .team__card--top {
+    padding: 9px;
+    margin-left: -33px; }
   .swiper-slide__images {
     width: 100%;
     max-width: 340px;

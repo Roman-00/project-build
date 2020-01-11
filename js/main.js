@@ -25,7 +25,6 @@
 });*/
 
 // jquery code upbtn
-
 $(document).ready(function () {
   var modal = $('.modal'),
       modalBtn = $('[data-toggle=modal]'),
@@ -45,7 +44,12 @@ $(document).ready(function () {
     btn.click(function(){
       $("html,body").animate({scrollTop:0},600);
     });
-
+  // Плавная прокрутка
+  $("body").on('click', '[href*="#"]', function(e){
+      var fixed_offset = 100;
+      $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+      e.preventDefault();
+  });
   //initialize swiper when document ready
   var mySwiper = new Swiper ('.swiper-container', {
     // Optional parameters
@@ -60,42 +64,66 @@ $(document).ready(function () {
     },
   });
 
-  var mySwiper = new Swiper('.steps-slider', {
-    loop: true,
-    pagination: {
-      el: '.swiper-fraction',
-      type: 'fraction',
-    },
-    navigation: {
-      nextEl: '.steps-button-next',
-      prevEl: '.steps-button-prev',
-    },
-  });
-
-  var mySwiper = new Swiper('.steps-slider', {
-    loop: true,
-    pagination: {
-      el: '.steps-pagination',
-      type: 'bullets',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.steps-button-next',
-      prevEl: '.steps-button-prev',
-    },
-  });
-  $('.swiper-menu').on('click',  '.swiper-menu__item', function() {
-    const index = $(this).data('index')
-    mySwiper.slideTo(index)
-  });
-
-  var next = $('.steps-button-next');
-  var prev = $('.steps-button-prev');
-
   var next = $('.swiper-button-next');
   var prev = $('.swiper-button-prev');
   var bullets = $('.swiper-pagination');
 
+
+  next.css('left', prev.width() + 10 + bullets.width() + 10);
+  bullets.css('left', prev.width() + 10);
+
+  var stepsSwiper = new Swiper('.steps__swiper-container', {
+    loop: !0,
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: !0
+    },
+    pagination: {
+      el: '.steps__swiper-pagination',
+      type: 'bullets',
+      clickable: !0,
+    },
+    navigation: {
+      nextEl: '.steps__swiper-button-next',
+      prevEl: '.steps__swiper-button-prev',
+    }
+  });
+
+  var stepsSwiper = new Swiper('.steps__swiper-container', {
+    loop: !0,
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: !0
+    },
+    pagination: {
+      el: '.steps__swiper-fraction',
+      type: 'fraction',
+      clickable: !0,
+    },
+    navigation: {
+      nextEl: '.steps__swiper-button-next',
+      prevEl: '.steps__swiper-button-prev',
+    }
+  });
+
+  // переключение слайдов по табам из секции 6
+  $('.steps__tabs-item').on('click', function () {
+    $('.steps__tabs-item').removeClass('active');
+    $(this).addClass('active');
+    const e = $(this).data('index');
+    stepsSwiper.slideTo(e);
+  });
+
+  stepsSwiper.on('click', 'slideChange', (function () {
+    let e = stepsSwiper.activeIndex - 1;
+    if (e === 6) {e=0};
+    $('.steps__tabs-item').removeClass('active');
+    $('.steps__tabs-item').eq(e).addClass('active');
+  }));
+
+  var next = $('.steps__swiper-button-next');
+  var prev = $('.steps__swiper-button-prev');
+  var bullets = $('.steps__swiper-pagination');
 
   next.css('left', prev.width() + 10 + bullets.width() + 10);
   bullets.css('left', prev.width() + 10);
