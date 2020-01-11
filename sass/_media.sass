@@ -45,6 +45,9 @@
       flex: 1 1 calc(50% - 30px)
       max-width: calc(50% - 30px)
       padding: 0 15px
+  .steps
+    &__inscription
+      margin-top: 3rem
   .clients
     &__card
       margin-bottom: 7rem
@@ -78,7 +81,18 @@
       padding: 0 15px
   .design
     &__card
-      align-items: top 
+      align-items: top
+  .steps
+    display: none 
+  .team
+    &-title
+      &__heading
+        color: $dark
+      &__description
+        color: $dark
+    &-section
+      &__title
+        margin-top: 30rem
   .swiper
     &-slider
       &--image
@@ -112,6 +126,15 @@
   .design
     &__card
       margin-bottom: 5.7rem
+  .team
+    background: $dark
+    &__text
+      color: $lite
+    &-title
+      &__heading
+        color: $lite
+      &__description
+        color: $lite
   .control
     position: relative
     background-color: $dark
@@ -207,7 +230,6 @@
     &__play
       width: 70px
   .team
-    margin-top: -2rem
     padding: 0px 5px 20rem 30px
     padding-bottom: 25rem
     background-color: $dark

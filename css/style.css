@@ -1352,6 +1352,8 @@ img {
     flex: 1 1 calc(50% - 30px);
     max-width: calc(50% - 30px);
     padding: 0 15px; }
+  .steps__inscription {
+    margin-top: 3rem; }
   .clients__card {
     margin-bottom: 7rem; } }
 
@@ -1380,6 +1382,14 @@ img {
     padding: 0 15px; }
   .design__card {
     align-items: top; }
+  .steps {
+    display: none; }
+  .team-title__heading {
+    color: #131313; }
+  .team-title__description {
+    color: #131313; }
+  .team-section__title {
+    margin-top: 30rem; }
   .swiper-slider--image {
     margin-top: 0; }
   .mobile-order__top {
@@ -1405,6 +1415,14 @@ img {
       color: #ffffff; }
   .design__card {
     margin-bottom: 5.7rem; }
+  .team {
+    background: #131313; }
+    .team__text {
+      color: #ffffff; }
+    .team-title__heading {
+      color: #ffffff; }
+    .team-title__description {
+      color: #ffffff; }
   .control {
     position: relative;
     background-color: #131313;
@@ -1491,7 +1509,6 @@ img {
   .video__play {
     width: 70px; }
   .team {
-    margin-top: -2rem;
     padding: 0px 5px 20rem 30px;
     padding-bottom: 25rem;
     background-color: #131313; }

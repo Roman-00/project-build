@@ -159,6 +159,13 @@ $(document).ready(function () {
         email: "Введите корректный email Пример: name@domain.com"
       }
     },
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+          return element.next('label').append(error);
+      }
+  
+       error.insertAfter($(element));
+    },
     errorElement: "div",
     errorClass: "invalid",
 
@@ -210,6 +217,13 @@ $(document).ready(function () {
         required: "Отметьте галочку",
       },
       userPhone: "Телефон обязателен",
+    },
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+          return element.next('label').append(error);
+      }
+  
+       error.insertAfter($(element));
     },
     errorElement: "div",
     errorClass: "invalid",
@@ -264,6 +278,13 @@ $(document).ready(function () {
       },
       userPhone: "Телефон обязателен",
       userQuestion: "Обязательно введите свой вопрос!",
+    },
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+          return element.next('label').append(error);
+      }
+  
+       error.insertAfter($(element));
     },
     errorElement: "div",
     errorClass: "invalid",
