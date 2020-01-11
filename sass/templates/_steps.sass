@@ -8,7 +8,35 @@
     align-items: center
   &__row
     display: flex
+    justify-content: space-between
+    align-items: center
     margin-top: 4.7rem
+  &__tabs
+    width: 100%
+    max-width: 137px
+    &-number
+      font-family: 'Yeseva One', cursive
+      font-size: 15px
+      font-weight: 400
+      line-height: 21px
+      text-transform: uppercase
+      &::after 
+        content: ''
+        display: block
+        width: 16px
+        height: 1px
+        margin-top: 3px
+        background: $primary
+    &-text
+      display: block
+      width: 100%
+      margin-top: 11px
+      margin-bottom: 36px
+      font-size: 15px
+      font-weight: 400
+      line-height: 18px 
+    &--line
+      display: block 
   &__swiper
     &-button
       &-prev, &-next
@@ -97,5 +125,3 @@
       text-transform: uppercase
 .steps__tabs-item
   opacity: 0.6
-.steps__swiper-button-next
-  background: url('../img/arrow-next.svg') no-repeat center

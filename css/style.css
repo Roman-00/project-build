@@ -855,7 +855,35 @@ img {
     align-items: center; }
   .steps__row {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 4.7rem; }
+  .steps__tabs {
+    width: 100%;
+    max-width: 137px; }
+    .steps__tabs-number {
+      font-family: 'Yeseva One', cursive;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 21px;
+      text-transform: uppercase; }
+      .steps__tabs-number::after {
+        content: '';
+        display: block;
+        width: 16px;
+        height: 1px;
+        margin-top: 3px;
+        background: #E3B873; }
+    .steps__tabs-text {
+      display: block;
+      width: 100%;
+      margin-top: 11px;
+      margin-bottom: 36px;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 18px; }
+    .steps__tabs--line {
+      display: block; }
   .steps__swiper-button-prev, .steps__swiper-button-next {
     bottom: 0;
     top: auto;
@@ -941,9 +969,6 @@ img {
 
 .steps__tabs-item {
   opacity: 0.6; }
-
-.steps__swiper-button-next {
-  background: url("../img/arrow-next.svg") no-repeat center; }
 
 .team {
   margin-top: -34rem; }

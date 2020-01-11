@@ -74,10 +74,6 @@ $(document).ready(function () {
 
   var stepsSwiper = new Swiper('.steps__swiper-container', {
     loop: !0,
-    effect: 'fade',
-    fadeEffect: {
-      crossFade: !0
-    },
     pagination: {
       el: '.steps__swiper-pagination',
       type: 'bullets',
@@ -91,10 +87,6 @@ $(document).ready(function () {
 
   var stepsSwiper = new Swiper('.steps__swiper-container', {
     loop: !0,
-    effect: 'fade',
-    fadeEffect: {
-      crossFade: !0
-    },
     pagination: {
       el: '.steps__swiper-fraction',
       type: 'fraction',
