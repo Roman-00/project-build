@@ -7,6 +7,7 @@
     display: flex
     align-items: center
   &__row
+    display: flex
     margin-top: 4.7rem
   &__swiper
     &-button
@@ -74,33 +75,6 @@
       line-height: 25px
     &--bottom
       margin-bottom: 66px
-  &__tabs
-    display: flex
-    flex-wrap: wrap
-    flex-direction: row
-    justify-content: space-between
-    &:nth-child(3n+2)
-      display: block
-      margin: auto
-      margin-left: 500px
-    &-item
-      width: 100%
-      max-width: 30%
-      margin: auto
-      margin-bottom: 36px
-    &-number
-      font-family: 'Yeseva One', cursive
-      font-size: 15px
-      font-weight: 400
-      line-height: 21px
-      text-transform: uppercase
-      &::after
-        content: ''
-        display: block
-        width: 16px
-        height: 1px
-        margin-top: 3px
-        background: $primary
     &-text
       max-width: 127px
       display: block
@@ -123,3 +97,5 @@
       text-transform: uppercase
 .steps__tabs-item
   opacity: 0.6
+.steps__swiper-button-next
+  background: url('../img/arrow-next.svg') no-repeat center

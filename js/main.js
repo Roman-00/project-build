@@ -114,13 +114,13 @@ $(document).ready(function () {
     stepsSwiper.slideTo(e);
   });
 
-  var next = $('.steps__swiper-button-next');
-  var prev = $('.steps__swiper-button-prev');
-  var bullets = $('.steps__swiper-pagination');
-
-  next.css('left', prev.width() + 10 + bullets.width() + 10);
-  bullets.css('left', prev.width() + 10);
-
+  stepsSwiper.on('slideChange', (function () {
+    let e = stepsSwiper.activeIndex - 1;
+    if (e === 6) {e=0};
+    $('.steps__tabs-item').removeClass('active');
+    $('.steps__tabs-item').eq(e).addClass('active');
+  }));
+  
   //animate wow 
   var wow = new WOW(
     {
