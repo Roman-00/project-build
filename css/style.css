@@ -1354,6 +1354,12 @@ img {
     flex: 1 1 calc(50% - 30px);
     max-width: calc(50% - 30px);
     padding: 0 15px; }
+  .steps__col--60 {
+    margin-top: 19rem;
+    width: 53%; }
+  .steps__text--description {
+    max-width: 250px;
+    font-size: 14px; }
   .steps__inscription {
     margin-top: 3rem; }
   .clients__card {
