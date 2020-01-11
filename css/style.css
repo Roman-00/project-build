@@ -693,6 +693,7 @@ img {
     line-height: 20px; }
   .swiper-slide__text {
     flex-basis: 50%;
+    max-width: 210px;
     margin-bottom: 34px; }
   .swiper-slide__heading {
     margin-bottom: 9px;
@@ -796,6 +797,10 @@ img {
   position: relative;
   margin: 0 auto;
   cursor: pointer; }
+
+#player {
+  width: 100%;
+  height: 434px; }
 
 .types__section-title {
   margin-bottom: 2rem; }
@@ -1004,7 +1009,7 @@ img {
     position: relative;
     margin: 59px auto;
     margin-bottom: 66px;
-    max-width: 252px; }
+    max-width: 272px; }
     .team__card--text {
       position: relative;
       max-width: 232px;
@@ -1377,6 +1382,10 @@ img {
   .section-title__heading--primary {
     font-size: 22px;
     line-height: 138.6%; }
+  .button:hover {
+    background-color: none;
+    cursor: pointer;
+    outline: none; }
   .hero__content {
     margin: 0; }
   .row {
@@ -1398,6 +1407,10 @@ img {
     color: #131313; }
   .team-section__title {
     margin-top: 30rem; }
+  .swiper-slide__text {
+    flex-basis: 50%;
+    max-width: 300px;
+    margin-bottom: 34px; }
   .swiper-slider--image {
     margin-top: 0; }
   .mobile-order__top {
@@ -1464,16 +1477,20 @@ img {
 @media screen and (max-width: 570px) {
   .container {
     width: 100%;
-    max-width: 330px; }
+    max-width: 400px; }
   .menu {
     padding: 0.8rem; }
-  .section-title__description {
-    max-width: 320px;
-    font-size: 16px; }
-  .section-title__text {
-    font-size: 16px; }
-  .section__title__description {
-    max-width: 21.86rem; }
+  .section {
+    padding-top: 36px; }
+    .section-title {
+      text-align: center; }
+      .section-title__description {
+        max-width: 320px;
+        font-size: 16px; }
+      .section-title__text {
+        font-size: 16px; }
+    .section__title__description {
+      max-width: 21.86rem; }
   .contacts__phone {
     margin-right: 0px;
     color: #ffffff;
@@ -1483,11 +1500,17 @@ img {
   .title {
     font-size: 23px;
     max-width: 300px; }
+  .phone {
+    font-size: 12px; }
+  .hero::after {
+    display: none; }
   .hero__content {
-    padding: 0.8rem; }
+    width: 100%; }
   .hero__scroll-down {
     display: none; }
   .hero__text {
+    width: 100%;
+    max-width: 320px;
     font-size: 18px;
     margin-bottom: 2.28rem; }
   .hero__button {
@@ -1502,6 +1525,11 @@ img {
     padding: 0.8rem;
     padding-top: 50px;
     padding-bottom: 5rem; }
+    .control__text {
+      max-width: 340px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 169.8%; }
     .control__policy-label {
       justify-content: flex-start; }
     .control__button {
@@ -1514,10 +1542,20 @@ img {
       min-height: 207px;
       background-size: contain;
       margin-bottom: 27px; }
+    .control__input {
+      border-bottom: 1px solid #ffffff; }
+      .control__input::placeholder {
+        color: #ffffff; }
+    .control__label {
+      color: rgba(255, 255, 255, 0.5); }
+  .types__card {
+    width: 100%; }
   .video__play {
-    width: 70px; }
+    position: relative;
+    margin: auto;
+    width: 37px;
+    height: 37px; }
   .team {
-    padding: 0px 5px 20rem 30px;
     padding-bottom: 25rem;
     background-color: #131313; }
     .team__text {
@@ -1533,6 +1571,10 @@ img {
       display: none; }
     .team__text {
       color: #ffffff; }
+    .team__card {
+      max-width: 500px; }
+      .team__card--image {
+        max-width: 400px; }
   .steps {
     display: none; }
   .clients {
@@ -1583,17 +1625,30 @@ img {
   #player {
     width: 100%;
     height: 207px; }
+  .swiper-slide {
+    width: 330px; }
+  .swiper-pagination-bullets {
+    margin-left: 60px;
+    text-align: center; }
+  .swiper-button-prev {
+    margin-left: 50px;
+    text-align: center; }
   .swiper-button-next {
-    margin-left: 2px; } }
+    margin-left: 65px;
+    text-align: center; }
+  .col-30 {
+    padding: 0; } }
 
 @media screen and (max-width: 375px) {
   .container {
     width: 100%;
-    max-width: 330px; }
+    max-width: 350px; }
+  .hero__content {
+    padding: 0px 8px 0px 8px; }
   .hero__title {
     font-size: 23px; }
   .hero__text {
-    font-size: 18px; }
+    font-size: 16px; }
   .section-title--left {
     text-align: center; }
   .section-title__heading {
@@ -1614,7 +1669,7 @@ img {
   .card {
     margin: 0px 0px 59px 0px; }
     .card__image {
-      width: 100%; }
+      width: 340px; }
     .card__title {
       font-size: 15px; }
     .card__text {
@@ -1629,6 +1684,8 @@ img {
   .policy__label--text {
     font-size: 14px;
     font-weight: 400; }
+  .types__card {
+    width: 100%; }
   .control {
     position: relative;
     padding: 0.8rem;
@@ -1654,14 +1711,16 @@ img {
   .team__card--top {
     padding: 9px;
     margin-left: -33px; }
-  .swiper-slide__images {
-    width: 100%;
-    max-width: 340px;
-    min-height: 201px; }
-  .swiper-slide__heading {
-    font-size: 14px; }
-  .swiper-slide__value {
-    font-size: 14px; }
+  .swiper-slide {
+    width: 330px; }
+    .swiper-slide__images {
+      width: 100%;
+      max-width: 340px;
+      min-height: 201px; }
+    .swiper-slide__heading {
+      font-size: 14px; }
+    .swiper-slide__value {
+      font-size: 14px; }
   .footer__map--wrap {
     width: 100%;
     max-width: 280px;

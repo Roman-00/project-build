@@ -74,6 +74,11 @@
         &--primary
           font-size: 22px
           line-height: 138.6%
+  .button
+    &:hover
+      background-color: none
+      cursor: pointer
+      outline: none
   .hero
     &__content
       margin: 0
@@ -102,6 +107,11 @@
       &__title
         margin-top: 30rem
   .swiper
+    &-slide
+      &__text
+        flex-basis: 50%
+        max-width: 300px
+        margin-bottom: 34px
     &-slider
       &--image
         margin-top: 0
@@ -179,11 +189,13 @@
 @media screen and ( max-width:570px )
   .container
     width: 100%
-    max-width: 330px
+    max-width: 400px
   .menu
     padding: 0.8rem
   .section
+    padding-top: 36px
     &-title
+      text-align: center
       &__description
         max-width: 320px
         font-size: 16px
@@ -202,12 +214,18 @@
   .title
     font-size: 23px
     max-width: 300px
+  .phone
+    font-size: 12px
   .hero
+    &::after
+      display: none
     &__content
-      padding: 0.8rem
+      width: 100%
     &__scroll-down
       display: none
     &__text
+      width: 100%
+      max-width: 320px
       font-size: 18px
       margin-bottom: 2.28rem
     &__button
@@ -222,6 +240,11 @@
     padding: 0.8rem
     padding-top: 50px
     padding-bottom: 5rem
+    &__text
+      max-width: 340px
+      font-size: 14px
+      font-weight: 400
+      line-height: 169.8%
     &__policy-label
       justify-content: flex-start
     &__button
@@ -234,11 +257,22 @@
       min-height: 207px
       background-size: contain
       margin-bottom: 27px
+    &__input
+       border-bottom: 1px solid $lite
+       &::placeholder
+        color: $lite
+    &__label
+      color: rgba($lite, 0.5)
+  .types
+    &__card
+      width: 100%
   .video
     &__play
-      width: 70px
+      position: relative
+      margin: auto
+      width: 37px
+      height: 37px
   .team
-    padding: 0px 5px 20rem 30px
     padding-bottom: 25rem
     background-color: $dark
     &__text
@@ -255,6 +289,10 @@
         display: none
     &__text
       color: $lite
+    &__card
+      max-width: 500px
+      &--image
+       max-width: 400px
   .steps
     display: none
   .clients
@@ -311,18 +349,33 @@
     width: 100%
     height: 207px
   .swiper
+    &-slide
+      width: 330px
+    &-pagination
+      &-bullets
+        margin-left: 60px
+        text-align: center
     &-button
+      &-prev
+        margin-left: 50px
+        text-align: center
       &-next
-        margin-left: 2px
+        margin-left: 65px
+        text-align: center
+  .col
+    &-30
+      padding: 0
 @media screen and ( max-width:375px )
   .container
     width: 100%
-    max-width: 330px
+    max-width: 350px
   .hero
+    &__content
+      padding: 0px 8px 0px 8px
     &__title
       font-size: 23px
     &__text
-      font-size: 18px
+      font-size: 16px
   .section
     &-title
       &--left
@@ -345,7 +398,7 @@
   .card
     margin: 0px 0px 59px 0px
     &__image
-      width: 100%
+      width: 340px
     &__title
       font-size: 15px
     &__text
@@ -362,6 +415,9 @@
       &--text
         font-size: 14px
         font-weight: 400
+  .types
+    &__card
+      width: 100%
   .control
     position: relative
     padding: 0.8rem
@@ -392,6 +448,7 @@
         margin-left: -33px
   .swiper
     &-slide
+      width: 330px
       &__images
         width: 100%
         max-width: 340px
