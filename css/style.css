@@ -1708,8 +1708,12 @@ img {
   .policy__label--text {
     font-size: 14px;
     font-weight: 400; }
-  .types__card {
-    width: 100%; }
+  .types {
+    padding: 36px 15px 60px 15px; }
+    .types__card {
+      width: 100%; }
+  .design {
+    padding: 36px 15px 60px 15px; }
   .control {
     position: relative;
     padding: 0.8rem;
@@ -1730,14 +1734,15 @@ img {
     margin: auto;
     width: 37px;
     height: 37px; }
-  .team__text {
-    display: none; }
-  .team__card {
-    margin-left: 0;
-    padding: 0px 10px 0px 10px; }
-    .team__card--top {
-      padding: 9px;
-      margin-left: -33px; }
+  .team {
+    padding: 36px 20px 300px 20px; }
+    .team__text {
+      display: none; }
+    .team__card {
+      margin-left: 30px; }
+      .team__card--top {
+        padding: 9px;
+        margin-left: -33px; }
   .swiper-slide {
     width: 330px; }
     .swiper-slide__images {
@@ -1748,9 +1753,11 @@ img {
       font-size: 14px; }
     .swiper-slide__value {
       font-size: 14px; }
-  .footer__map--wrap {
-    width: 100%;
-    max-width: 280px;
-    height: 230px; }
+  .footer {
+    padding: 36px 10px 0px 10px; }
+    .footer__map--wrap {
+      width: 100%;
+      max-width: 280px;
+      height: 230px; }
   .modal__button {
     margin-right: 30px; } }
