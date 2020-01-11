@@ -187,6 +187,7 @@ $(document).ready(function () {
        },
        error: function (response) {
          console.error('Ошибка запроса! ' + response);
+         ym('65026879', 'reachGoal', 'button'); return true;
        }
      });
     },

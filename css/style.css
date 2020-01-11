@@ -1041,7 +1041,7 @@ img {
 
 .clients {
   padding-bottom: 30rem;
-  background: #ffffff url("/img/clients/clients-bg.png") no-repeat center bottom;
+  background: #ffffff url("../img/clients/clients-bg.png") no-repeat center bottom;
   background-size: cover; }
   .clients-title__description {
     width: 100%;
