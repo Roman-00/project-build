@@ -342,10 +342,17 @@ template {
       box-shadow: none;
       outline: none; }
   .button--outline {
+    padding: 11px 21px;
+    border-radius: 2px;
+    font-family: 'Futura Demi';
+    font-size: 0.93rem;
+    text-transform: uppercase;
+    outline: 0;
+    outline-offset: 0;
     border: 1px solid #ffffff;
     background-color: transparent;
     color: #ffffff;
-    outline: none; }
+    cursor: pointer; }
   .button--more {
     padding: 18px 25px; }
   .button--size {
@@ -1417,7 +1424,21 @@ img {
   .mobile-order__top {
     order: -1; }
   .col-50 {
-    width: 100%; } }
+    width: 100%; }
+  .contacts__button {
+    background: #E3B873; }
+  .hero__button::before {
+    display: none; }
+  .contacts__button:hover {
+    background: #E3B873; }
+  .button:hover {
+    background: #E3B873;
+    box-shadow: none; }
+  .button--primary {
+    box-shadow: none; }
+  .footer__button:hover {
+    background: #E3B873;
+    box-shadow: none; } }
 
 @media screen and (max-width: 760px) {
   .row {
@@ -1573,9 +1594,10 @@ img {
     .team__text {
       color: #ffffff; }
     .team__card {
-      max-width: 500px; }
+      max-width: 500px;
+      margin-left: 30px; }
       .team__card--image {
-        max-width: 400px; }
+        width: 303px; }
   .steps {
     display: none; }
   .clients {
@@ -1638,7 +1660,8 @@ img {
     margin-left: 65px;
     text-align: center; }
   .col-30 {
-    padding: 0; } }
+    padding: 0;
+    max-width: 100%; } }
 
 @media screen and (max-width: 375px) {
   .container {
@@ -1710,7 +1733,8 @@ img {
   .team__text {
     display: none; }
   .team__card {
-    padding: 0px 0px 0px 25px; }
+    margin-left: 0;
+    padding: 0px 10px 0px 10px; }
     .team__card--top {
       padding: 9px;
       margin-left: -33px; }

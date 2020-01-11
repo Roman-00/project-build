@@ -122,6 +122,28 @@
   .col
     &-50
       width: 100%
+  .contacts
+    &__button
+      background: #E3B873
+  .hero
+    &__button
+      &::before
+        display: none
+  .contacts
+    &__button
+      &:hover
+        background: #E3B873
+  .button
+    &:hover
+      background: #E3B873
+      box-shadow: none
+    &--primary
+      box-shadow: none     
+  .footer
+    &__button
+      &:hover
+        background: #E3B873
+        box-shadow: none
 @media screen and ( max-width:760px )
   .row
     flex-direction: column
@@ -291,8 +313,9 @@
       color: $lite
     &__card
       max-width: 500px
+      margin-left: 30px
       &--image
-       max-width: 400px
+       width: 303px
   .steps
     display: none
   .clients
@@ -365,6 +388,7 @@
   .col
     &-30
       padding: 0
+      max-width: 100%
 @media screen and ( max-width:375px )
   .container
     width: 100%
@@ -443,7 +467,8 @@
     &__text
       display: none
     &__card
-      padding: 0px 0px 0px 25px
+      margin-left: 0
+      padding: 0px 10px 0px 10px
       &--top
         padding: 9px
         margin-left: -33px
