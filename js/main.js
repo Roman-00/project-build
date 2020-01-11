@@ -312,9 +312,13 @@ $(document).ready(function () {
      });
     },
   });
-
+  
+  ownModal.onclick = function() {
+    ownModal.classList.remove('active');
+  };
+  
   //Маска для телефона
-  $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "+7 (___) __-__-___"});
+  $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "Ваш номер телефона"});
 
   //Youtube API
   $('.video__play').on('click', function onYouTubeIframeAPIReady() {

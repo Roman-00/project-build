@@ -867,7 +867,8 @@ img {
       margin-top: 0; }
   .steps__tabs {
     width: 100%;
-    max-width: 137px; }
+    max-width: 137px;
+    cursor: pointer; }
     .steps__tabs-number {
       font-family: 'Yeseva One', cursive;
       font-size: 15px;
@@ -1708,9 +1709,11 @@ img {
     height: 37px; }
   .team__text {
     display: none; }
-  .team__card--top {
-    padding: 9px;
-    margin-left: -33px; }
+  .team__card {
+    padding: 0px 0px 0px 25px; }
+    .team__card--top {
+      padding: 9px;
+      margin-left: -33px; }
   .swiper-slide {
     width: 330px; }
     .swiper-slide__images {
@@ -1724,4 +1727,6 @@ img {
   .footer__map--wrap {
     width: 100%;
     max-width: 280px;
-    height: 230px; } }
+    height: 230px; }
+  .modal__button {
+    margin-right: 30px; } }
