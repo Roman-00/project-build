@@ -343,7 +343,8 @@ $(document).ready(function () {
   $(window).bind('scroll', function(){
     var windowTop = $(this).scrollTop();
     if (windowTop > clientsTop) {
-      console.log('Докрутили');
+      $('#map-in').html()
+      $(window).unbind('scroll')
     }
   });
 
