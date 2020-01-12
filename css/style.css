@@ -1593,9 +1593,14 @@ img {
   .video__play {
     position: relative;
     margin: auto; }
+    .video__play-image {
+      margin-top: 35%;
+      margin-right: -3px;
+      width: 12px;
+      height: 12px; }
     .video__play-shadow {
-      width: 57px;
-      height: 57px; }
+      width: 37px;
+      height: 37px; }
   .swiper-pagination {
     margin-left: 100px; }
   .swiper-button-prev, .swiper-button-next {
@@ -1764,9 +1769,14 @@ img {
   .video__play {
     position: relative;
     margin: auto; }
+    .video__play-image {
+      margin-top: 35%;
+      margin-right: -3px;
+      width: 12px;
+      height: 12px; }
     .video__play-shadow {
-      width: 57px;
-      height: 57px; }
+      width: 37px;
+      height: 37px; }
   .team {
     padding: 36px 10px 300px 10px; }
     .team__text {

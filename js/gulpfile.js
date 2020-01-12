@@ -68,8 +68,11 @@ function fonts(done) {
 };
 
 function imagemin(done) {
-  src('../img/**/*')
-    .pipe(tinypng({ key: 'B34J7l5LmGSf35B59L3z9dvkkxY0bW0L', })).pipe(dest('../dist/img/'))
+  src('../img/**/*.{png,jpg,jpeg}')
+  .pipe(tinypng({
+      key: 'B34J7l5LmGSf35B59L3z9dvkkxY0bW0L',
+  }))
+  .pipe(dest('../dest/img/'));
   src('../img/**/*.svg')
     .pipe(dest('../dist/img/'))
   done();
