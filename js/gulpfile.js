@@ -4,6 +4,7 @@ const sass = require('gulp-sass');
 const cleanCSS = require('gulp-clean-css');
 const minify = require('gulp-minify');
 const htmlmin = require('gulp-htmlmin');
+const tinypng = require('gulp-tinypng-compress');
 
 // Static server
 function bs() {
@@ -53,7 +54,7 @@ function html(done) {
 };
 
 function php(done) {
-  src('../**/*.php')
+  src(['../**/*.php'])
     .pipe(dest('../dist/'));
   src('../phpmailer/**/**')
     .pipe(dest('../dist/phpmailer/'));
@@ -66,5 +67,13 @@ function fonts(done) {
   done();
 };
 
+function imagemin(done) {
+  src('../img/**')
+    .pipe(tinypng({ key: 'B34J7l5LmGSf35B59L3z9dvkkxY0bW0L', })).pipe(dest('../dist/img/'))
+  src('../img/**/*.svg')
+    .pipe(dest('../dist/img/'))
+  done();
+};
+
 exports.serve = bs;
-exports.build = series(buildCss, buildJs, html, php, fonts);
+exports.build = series(buildCss, buildJs, html, php, fonts, imagemin);

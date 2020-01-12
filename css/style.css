@@ -805,7 +805,8 @@ img {
 .video__play {
   position: relative;
   margin: 0 auto;
-  cursor: pointer; }
+  cursor: pointer;
+  box-shadow: 0px 5px 30px rgba(227, 184, 115, 0.2); }
 
 #player {
   width: 100%;
@@ -1569,7 +1570,7 @@ img {
       background-size: contain;
       margin-bottom: 27px; }
     .control__input {
-      border-bottom: 1px solid #ffffff; }
+      border-bottom: 1px solid #363636; }
       .control__input::placeholder {
         color: #ffffff; }
     .control__label {
@@ -1629,7 +1630,7 @@ img {
       flex-direction: column;
       width: 100%; }
     .footer__input {
-      border-bottom: 1px solid #ffffff; }
+      border-bottom: 1px solid #363636; }
     .footer__map {
       display: flex;
       flex-wrap: wrap;
@@ -1686,7 +1687,7 @@ img {
   .hero__title {
     font-size: 23px; }
   .hero__text {
-    max-width: 330px;
+    max-width: 325px;
     font-size: 18px; }
   .hero__button {
     font-size: 13px; }

@@ -337,6 +337,16 @@ $(document).ready(function () {
   };
 
   var player;
+  // Появления карты после прокрутки
+  var clients = $('.clients');
+  var clientsTop = clients.offset().top;
+  $(window).bind('scroll', function(){
+    var windowTop = $(this).scrollTop();
+    if (windowTop > clientsTop) {
+      console.log('Докрутили');
+    }
+  });
+
   //Создаём макет содержимого карты.  
   ymaps.ready(function () {
     var myMap = new ymaps.Map('map-in', {
@@ -370,4 +380,6 @@ $(document).ready(function () {
     myMap.geoObjects
         .add(myPlacemark)
   });
+
+  // Показывать карту только когда докрутили до нее
 });
