@@ -1431,6 +1431,8 @@ img {
     color: #131313; }
   .team-section__title {
     margin-top: 30rem; }
+  .clients {
+    background: #ffffff; }
   .swiper-slide__text {
     flex-basis: 50%;
     max-width: 300px;
@@ -1482,8 +1484,6 @@ img {
       color: #ffffff; }
     .team-title__description {
       color: #ffffff; }
-  .clients {
-    background: #ffffff; }
   .control {
     position: relative;
     background-color: #131313;
