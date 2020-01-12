@@ -51,7 +51,7 @@ $(document).ready(function () {
       e.preventDefault();
   });
   //initialize swiper when document ready
-  var mySwiper = new Swiper ('.swiper-container', {
+  var mySwiper = new Swiper ('.swiper-container__projects', {
     // Optional parameters
     loop: true,
     pagination: {
