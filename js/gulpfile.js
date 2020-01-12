@@ -5,7 +5,6 @@ const cleanCSS = require('gulp-clean-css');
 const minify = require('gulp-minify');
 const htmlmin = require('gulp-htmlmin');
 
-
 // Static server
 function bs() {
   serveSass();
