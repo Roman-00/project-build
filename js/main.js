@@ -343,13 +343,13 @@ $(document).ready(function () {
   $(window).bind('scroll', function(){
     var windowTop = $(this).scrollTop();
     if (windowTop > clientsTop) {
-      $('#map-in').html()
-      $(window).unbind('scroll')
+      $('#map-in').html('<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5b7f88401d4bf19ac293ac4cf87802227c54d63b1896ef24450b8f9cd078ab94&amp;width=100%25&amp;lang=ru_RU&amp;scroll=false&amp;center=47.244734, 39.723227"></script>');
+      $(window).unbind('scroll');
     }
   });
 
   //Создаём макет содержимого карты.  
-  ymaps.ready(function () {
+  /*ymaps.ready(function () {
     var myMap = new ymaps.Map('map-in', {
             center: [47.244734, 39.723227],
             zoom: 18
@@ -380,7 +380,7 @@ $(document).ready(function () {
     myMap.behaviors.disable('scrollZoom');
     myMap.geoObjects
         .add(myPlacemark)
-  });
+  });*/
 
   // Показывать карту только когда докрутили до нее
 });
