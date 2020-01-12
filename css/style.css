@@ -1771,9 +1771,9 @@ img {
     .swiper-slide__value {
       font-size: 14px; }
   .swiper-pagination {
-    margin-left: 60px; }
+    margin-left: 70px; }
   .swiper-button-prev, .swiper-button-next {
-    margin-left: 60px; }
+    margin-left: 70px; }
   .footer {
     padding: 36px 10px 38px 10px; }
     .footer__map--wrap {
@@ -1787,3 +1787,9 @@ img {
     left: 0;
     right: 0;
     margin: auto; } }
+
+@media screen and (max-width: 320px) {
+  .swiper-pagination {
+    margin-left: 60px; }
+  .swiper-button-prev, .swiper-button-next {
+    margin-left: 60px; } }
