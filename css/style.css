@@ -889,28 +889,30 @@ img {
   .application__group-four {
     max-width: 330px;
     margin: 120px 0px 0px 60px; }
-  .application__text-form {
-    flex-basis: 42%; }
-  .application__text-group {
-    display: flex;
-    align-items: center; }
-  .application__text-number {
-    padding: 10px 10px;
-    font-size: 18px;
-    font-weight: 400;
-    text-align: center;
-    background: #E3B873;
-    color: #ffffff;
-    border-radius: 50%; }
-  .application__text-description {
-    display: block;
-    max-width: 364px;
-    margin-left: 17px;
-    font-family: 'Futura Demi', sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    color: #363636; }
+  .application__text {
+    flex-basis: 50%; }
+    .application__text-form {
+      flex-basis: 42%; }
+    .application__text-group {
+      display: flex;
+      align-items: center; }
+    .application__text-number {
+      padding: 10px 10px;
+      font-size: 18px;
+      font-weight: 400;
+      text-align: center;
+      background: #E3B873;
+      color: #ffffff;
+      border-radius: 50%; }
+    .application__text-description {
+      display: block;
+      max-width: 364px;
+      margin-left: 17px;
+      font-family: 'Futura Demi', sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      color: #363636; }
 
 .modal__application-title {
   max-width: 320px;
